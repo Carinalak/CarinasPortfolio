@@ -10,7 +10,7 @@ För att köra projektet skriv i Terminalen:
 
 ### Mobila versionen
 
-
+![Mobile version](assets/mobile1.png)
 
 # Vue 3 + TypeScript + Vite
 
