@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Om from './components/Om.vue';
+
 
 
 
@@ -13,7 +13,6 @@ import Om from './components/Om.vue';
 <template>
 
 
-<Om />
 
 
 
