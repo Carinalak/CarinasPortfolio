@@ -50,7 +50,7 @@
     padding: 4px 8px;
     color: #ffffff;
     background: transparent;
-    visibility: visible;
+    display: block;
 }
 .toggle-menu span  {
     display: block;
@@ -150,7 +150,7 @@ ul {
 
 /* ----------------------------- MENU BUTTONS TABLET VERSION ------------------------------------------ */
     .toggle-menu {
-        visibility: hidden;
+        display: none;
     }
 
     ul {

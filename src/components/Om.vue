@@ -27,18 +27,16 @@ import Menu from './Menu.vue'
             projekt jag gjort och lite
             annat smått och gott.  
         </div>
+        <div class="citat2">Enjoy</div>
     </article>
 
     <article>
         <img src="../assets/img/CarinaFoto24.png">
     </article>
 
-    <article>
-        <div class="citat">Enjoy</div>
-    </article>
-    
-
-
+</section>
+<section>
+        <div class="citat1">Enjoy</div>
 </section>
 
 
@@ -56,23 +54,51 @@ img {
     height: 167.6px;
 }
 .main-container {
-    border: 1 px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
     gap: 30px;
 }
 .about {
     width: 250px;
-   
 }
+.citat1 {
+        display: block;
+        font-family: "Caveat", cursive;
+        font-size: 3.2rem;
+        text-align: center;
+        padding-top: 30px;
+    }
+.citat2 {
+        display: none;
+        font-family: "Caveat", cursive;
+        font-size: 2.6rem;
+
+    }
 /*----------------- TABLET -----------------------*/
 @media screen and (min-width: 640px) {
     img {
-        width: 250px;
-        height: 209.5px;
+        width: 333.33px;
+        height: 279.33px;
+    }
+
+    .main-container {
+        padding-top: 30px;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        
+    }
+    .citat1 {
+        display: none;
+    }
+    .citat2 {
+        display: block;
+        font-family: "Caveat", cursive;
+        font-size: 3.5rem;
+        text-align: center;
+        padding-top: 80px;
     }
 }
+
 </style>
