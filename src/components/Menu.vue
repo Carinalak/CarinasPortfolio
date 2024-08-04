@@ -16,7 +16,7 @@
     <div class="header-objects">
         <nav class="menu-links">
             <ul>
-                <li class="menu-link">Om</li>
+                <li class="menu-link"><a href="Om.vue">Om</a></li>
                 <li class="menu-link">Projekt</li>
                 <li class="menu-link">Kontakt</li>
             </ul>
@@ -61,6 +61,7 @@
     margin-bottom: 4px;
 }
 /* Hamburgerknapp slutar */
+
 .header-objects {
     display: flex;
     flex-direction: column;
@@ -105,11 +106,10 @@ ul {
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
-
 }
-
 .header-title {
     font-family: Roboto, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 600;
     font-size: 2.3rem;  
     margin-left: 10px; /* Adjust this value to move the title more to the left */
@@ -118,10 +118,9 @@ ul {
 }
 
 .line {
-    flex: 1;
+    flex: 0.3;
     height: 1px;
     background: #f5f5f5;
-    
 }
 
 .header-content::before {
@@ -146,9 +145,10 @@ ul {
 
 
 
-/* ----------------------------- MENU BUTTONS TABLET VERSION ------------------------------------------ */
+
 @media screen and (min-width: 640px) {
 
+/* ----------------------------- MENU BUTTONS TABLET VERSION ------------------------------------------ */
     .toggle-menu {
         visibility: hidden;
     }
@@ -181,7 +181,7 @@ ul {
         margin-right: 5px;
     }
 
-/* ----------------------------- HEADER STYLES MOBILE VERSION ------------------------------------------- */
+/* ----------------------------- HEADER STYLES TABLET VERSION ------------------------------------------- */
 
 .header-title {
     font-family: Roboto, sans-serif;
