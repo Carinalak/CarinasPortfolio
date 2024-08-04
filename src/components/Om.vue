@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import Om from './components/Om.vue'
-
+import Menu from './Menu.vue'
 
 
 
@@ -12,8 +11,7 @@ import Om from './components/Om.vue'
 </script>
 <template>
 
-
-<Om />
+<Menu />
 
 
 

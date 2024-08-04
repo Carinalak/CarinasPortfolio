@@ -13,21 +13,25 @@
 <template>
 
 <header>
-   
-
-    <section class="header-objects">
-        <div class="menu-links">
+    <div class="header-objects">
+        <nav class="menu-links">
             <ul>
                 <li class="menu-link">Om</li>
                 <li class="menu-link">Projekt</li>
                 <li class="menu-link">Kontakt</li>
             </ul>
-        </div>
+            <button class="toggle-menu" aria-label="Öppna meny">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
         <div class="header-content">
+            <div class="line"></div>
             <div class="header-title">Carina</div>
             <div class="line"></div>
         </div>
-    </section>
+    </div>
   </header>
 
 
@@ -36,13 +40,32 @@
 </template>
 <style scoped>
 
+/* ----------------------------- MENU BUTTONS - MOBILE VERSION ------------------------------------------- */
+/* Hamburgerknapp börjar: */
 
-/* ----------------------------- MENU BUTTONS ------------------------------------------- */
-
+.toggle-menu {
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    padding: 4px 8px;
+    color: #ffffff;
+    background: transparent;
+    visibility: visible;
+}
+.toggle-menu span  {
+    display: block;
+    background-color: #f5f5f5;
+    width: 35px;
+    height: 4px;
+    border-radius:4px;
+    margin-bottom: 4px;
+}
+/* Hamburgerknapp slutar */
 .header-objects {
     display: flex;
     flex-direction: column;
     width: 95vw;
+    padding-top: 20px;
 }
 ul {
     margin: 0;
@@ -53,6 +76,7 @@ ul {
     gap: 10px;
 }
 .menu-link {
+    visibility: hidden;
     color: #f5f5f5;
     font-family: Roboto, "Sans-serif";
     font-weight: bold;
@@ -65,27 +89,30 @@ ul {
 .menu-link:active {
     color: #041c39;
 }
-
 .menu-links {
     display: flex;
     justify-content: flex-end;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
-/* ----------------------------- HEADER STYLES ------------------------------------------- */
+
+/* ----------------------------- HEADER STYLES - MOBILE VERSION ------------------------------------------- */
 
 .header-content {
     display: flex;
     align-items: center;
     width: 95vw;
     position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .header-title {
     font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 3rem;  
-    margin-left: 200px; /* Adjust this value to move the title more to the left */
+    font-weight: 600;
+    font-size: 2.3rem;  
+    margin-left: 10px; /* Adjust this value to move the title more to the left */
     margin-right: 10px;
     position: relative;
 }
@@ -94,6 +121,7 @@ ul {
     flex: 1;
     height: 1px;
     background: #f5f5f5;
+    
 }
 
 .header-content::before {
@@ -102,7 +130,8 @@ ul {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 190px; /* Length of the line before the title */
+    /*width: 80px;  /*Length of the line before the title */
+    flex: 1;
     height: 1px;
     background: #f5f5f5;
 }
@@ -112,6 +141,62 @@ ul {
     flex: 1;
     height: 1px;
     background: #f5f5f5;
+}
+
+
+
+
+/* ----------------------------- MENU BUTTONS TABLET VERSION ------------------------------------------ */
+@media screen and (min-width: 640px) {
+
+    .toggle-menu {
+        visibility: hidden;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .menu-link {
+        visibility: visible;
+        color: #f5f5f5;
+        font-family: Roboto, "Sans-serif";
+        font-weight: bold;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    .menu-link:hover {
+        color: #a1d2e2;
+    }
+    .menu-link:active {
+        color: #041c39;
+    }
+    .menu-links {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5px;
+    }
+
+/* ----------------------------- HEADER STYLES MOBILE VERSION ------------------------------------------- */
+
+.header-title {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;  
+    margin-left: 10px; /* Adjust this value to move the title more to the left */
+    margin-right: 10px;
+    position: relative;
+}
+/*
+.header-content::before {
+    width: 190px; 
+
+}*/
+
 }
 
 
