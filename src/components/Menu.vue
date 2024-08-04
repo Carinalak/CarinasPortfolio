@@ -102,7 +102,7 @@ ul {
 .header-content {
     display: flex;
     align-items: center;
-    width: 95vw;
+    /*width: 95vw;*/
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
@@ -178,7 +178,7 @@ ul {
     .menu-links {
         display: flex;
         justify-content: flex-end;
-        margin-right: 5px;
+        margin-right: 35px;
     }
 
 /* ----------------------------- HEADER STYLES TABLET VERSION ------------------------------------------- */

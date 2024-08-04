@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import Menu from './Menu.vue'
-import Footer from './Footer.vue'
+import Foot from './Foot.vue'
 
 
 
@@ -41,7 +41,7 @@ import Footer from './Footer.vue'
 </section>
 
 
-<Footer />
+<Foot />
 
 
 </template>
