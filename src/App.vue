@@ -11,7 +11,7 @@ import Menu from './components/Menu.vue'
 
 </script>
 <template>
- <h1> Carina</h1>
+
 <Menu />
 
 
