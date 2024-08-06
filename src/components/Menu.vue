@@ -51,6 +51,7 @@
     color: #ffffff;
     background: transparent;
     display: block;
+    margin-top: 10px;
 }
 .toggle-menu span  {
     display: block;
@@ -62,41 +63,14 @@
 }
 /* Hamburgerknapp slutar */
 
-.header-objects {
-    display: flex;
-    flex-direction: column;
-    width: 95vw;
-    padding-top: 20px;
-}
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-.menu-link {
-    visibility: hidden;
-    color: #f5f5f5;
-    font-family: Roboto, "Sans-serif";
-    font-weight: bold;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.menu-link:hover {
-    color: #a1d2e2;
-}
-.menu-link:active {
-    color: #041c39;
-}
 .menu-links {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+.menu-link {
+    display: none;
 }
-
-
 /* ----------------------------- HEADER STYLES - MOBILE VERSION ------------------------------------------- */
 
 .header-content {
@@ -134,7 +108,6 @@ ul {
     height: 1px;
     background: #f5f5f5;
 }
-
 .header-content::after {
     content: "";
     flex: 1;
@@ -153,6 +126,44 @@ ul {
         display: none;
     }
 
+    .header-objects {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    padding-top: 15px;
+}
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .menu-link {
+        display: block;
+        color: #f5f5f5;
+        font-family: Roboto, "Sans-serif";
+        font-weight: bold;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    .menu-link a {
+        color: #f5f5f5;
+    }
+    .menu-link a:hover {
+        color: #a1d2e2;
+       
+    }
+    .menu-link a:active {
+        color: #041c39;
+        
+    }
+    .menu-links {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
     ul {
         margin: 0;
         padding: 0;

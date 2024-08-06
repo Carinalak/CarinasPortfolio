@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import Menu from './components/Menu.vue'
 import Om from './components/Om.vue'
+import Foot from './components/Foot.vue'
 
 
 
@@ -11,11 +13,11 @@ import Om from './components/Om.vue'
 
 </script>
 <template>
-
+<Menu />
 
 <Om />
 
-
+<Foot />
 
 
 

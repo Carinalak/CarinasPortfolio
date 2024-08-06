@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import Menu from './Menu.vue'
-import Foot from './Foot.vue'
-
-
 
 
 
@@ -12,7 +8,7 @@ import Foot from './Foot.vue'
 </script>
 <template>
 
-<Menu />
+
 
 <section class="main-container">
     <article class="about">
@@ -41,7 +37,7 @@ import Foot from './Foot.vue'
 </section>
 
 
-<Foot />
+
 
 
 </template>
