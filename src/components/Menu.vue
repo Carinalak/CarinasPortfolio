@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import { defineProps } from 'vue'
 
-
-
-
-
-
+const props = defineProps<{
+  showOm: () => void,
+  showProjekt: () => void
+}>()
 
 
 
@@ -16,9 +16,9 @@
     <div class="header-objects">
         <nav class="menu-links">
             <ul>
-                <li class="menu-link"><a href="Om.vue">Om</a></li>
-                <li class="menu-link">Projekt</li>
-                <li class="menu-link">Kontakt</li>
+                <li @click="props.showOm" class="menu-link">Om</li>
+                <li @click="props.showProjekt" class="menu-link">Projekt</li>
+                <li class="menu-link"><a href="Kontakt.vue">Kontakt</a></li>
             </ul>
             <button class="toggle-menu" aria-label="Öppna meny">
                 <span></span>

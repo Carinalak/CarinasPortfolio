@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import Menu from './components/Menu.vue'
 import Om from './components/Om.vue'
+import Projekt from './components/Projekt.vue'
 import Foot from './components/Foot.vue'
 
+const currentComponent = ref('om')
 
-
-
+const showOm = () => currentComponent.value = 'om'
+const showProjekt = () => currentComponent.value = 'projekt'
 
 
 
@@ -13,11 +16,11 @@ import Foot from './components/Foot.vue'
 
 </script>
 <template>
-<Menu />
-
-<Om />
-
-<Foot />
+<Menu :showOm="showOm" :showProjekt="showProjekt" />
+  <!-- Använd v-if för att visa rätt komponent baserat på currentComponent -->
+  <Om v-if="currentComponent === 'om'" />
+  <Projekt v-if="currentComponent === 'projekt'" />
+  <Foot />
 
 
 

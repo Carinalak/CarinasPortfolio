@@ -36,7 +36,7 @@
 <style scoped>
 
 .line {
-    height: 1px;
+    height: 1.5px;
     background: #f5f5f5;
     margin-top: 30px;
     margin-bottom: 30px;
