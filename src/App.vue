@@ -9,6 +9,7 @@ const currentComponent = ref('om')
 
 const showOm = () => currentComponent.value = 'om'
 const showProjekt = () => currentComponent.value = 'projekt'
+const showKontakt = () => currentComponent.value = 'kontakt'
 
 
 
@@ -16,18 +17,11 @@ const showProjekt = () => currentComponent.value = 'projekt'
 
 </script>
 <template>
-<Menu :showOm="showOm" :showProjekt="showProjekt" />
+  <Menu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
   <!-- Använd v-if för att visa rätt komponent baserat på currentComponent -->
   <Om v-if="currentComponent === 'om'" />
   <Projekt v-if="currentComponent === 'projekt'" />
   <Foot />
-
-
-
-
-
-
-
 
 
 

@@ -3,7 +3,8 @@ import { defineProps } from 'vue'
 
 const props = defineProps<{
   showOm: () => void,
-  showProjekt: () => void
+  showProjekt: () => void,
+  showKontakt: () => void
 }>()
 
 
@@ -18,7 +19,7 @@ const props = defineProps<{
             <ul>
                 <li @click="props.showOm" class="menu-link">Om</li>
                 <li @click="props.showProjekt" class="menu-link">Projekt</li>
-                <li class="menu-link"><a href="Kontakt.vue">Kontakt</a></li>
+                <li @click="props.showKontakt" class="menu-link"><a href="Kontakt.vue">Kontakt</a></li>
             </ul>
             <button class="toggle-menu" aria-label="Öppna meny">
                 <span></span>
@@ -76,7 +77,7 @@ const props = defineProps<{
 .header-content {
     display: flex;
     align-items: center;
-    /*width: 95vw;*/
+    width: 95vw;
     position: relative;
     margin-left: 10px;
     margin-right: 10px;
