@@ -19,7 +19,7 @@ const emit = defineEmits(['toggleHamburgerMenu'])
             <ul>
                 <li @click="props.showOm" class="menu-link">Om</li>
                 <li @click="props.showProjekt" class="menu-link">Projekt</li>
-                <li @click="props.showKontakt" class="menu-link"><a href="Kontakt.vue">Kontakt</a></li>
+                <li @click="props.showKontakt" class="menu-link">Kontakt</li>
             </ul>
             <button class="toggle-menu" @click="emit('toggleHamburgerMenu')" aria-label="Öppna meny">
                 <span></span>

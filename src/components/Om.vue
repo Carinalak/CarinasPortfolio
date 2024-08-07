@@ -23,11 +23,12 @@
             hittar du några av de 
             projekt jag gjort och annat intressant.
         </div>
+        
         <div class="citat2">Enjoy</div>
     </article>
 
     <article>
-        <img src="../assets/img/CarinaFoto24.png">
+        <img src="../assets/img/CarinaFoto24.png" alt="En bild på en glad tjej i halvlångt brunt hår och glasögon.">
     </article>
 
 </section>

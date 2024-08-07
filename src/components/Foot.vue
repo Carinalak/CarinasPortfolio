@@ -40,10 +40,10 @@
 <style scoped>
 
 .line {
-    height: 1.5px;
+    height: 1.2px;
     background: #f5f5f5;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     width: 95vw;
@@ -61,12 +61,13 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .icon {
     fill: #f5f5f5;
     width: 30px;
     height: 30px;
-    /*transition: fill 0.3s ease, filter 0.3s ease;*/
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 .icon:hover {

@@ -36,13 +36,17 @@ const toggleHamburgerMenu = () => {
 
 <template>
 
-
-<Menu  :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" @toggleHamburgerMenu="toggleHamburgerMenu"/>
-<HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" :isOpen="isHamburgerMenuOpen" @toggleHamburgerMenu="toggleHamburgerMenu"/>
-<Om v-if="currentComponent === 'om'" />
-<Projekt v-if="currentComponent === 'projekt'" />
-<Foot />
-
+<div class="app-container">
+    <Menu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" @toggleHamburgerMenu="toggleHamburgerMenu"/>
+    <HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" :isOpen="isHamburgerMenuOpen" @toggleHamburgerMenu="toggleHamburgerMenu"/>
+    <div class="content-wrapper">
+      <main class="main-content">
+        <Om v-if="currentComponent === 'om'" />
+        <Projekt v-if="currentComponent === 'projekt'" />
+      </main>
+      <Foot />
+    </div>
+  </div>
 
 
 
@@ -51,14 +55,19 @@ const toggleHamburgerMenu = () => {
 <style scoped>
 
 /* NEW */ 
-
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-main {
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-content {
   flex: 1;
 }
 
