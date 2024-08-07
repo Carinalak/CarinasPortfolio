@@ -18,8 +18,8 @@ const showKontakt = () => currentComponent.value = 'kontakt'
 
 </script>
 <template>
+  
   <Menu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
-  <!-- Använd v-if för att visa rätt komponent baserat på currentComponent -->
   <HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
   <Om v-if="currentComponent === 'om'" />
   <Projekt v-if="currentComponent === 'projekt'" />
