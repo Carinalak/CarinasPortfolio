@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import Menu from './components/Menu.vue'
 import Om from './components/Om.vue'
+import HamburgerMenu from './components/HamburgerMenu.vue'
 import Projekt from './components/Projekt.vue'
 import Foot from './components/Foot.vue'
 
@@ -19,6 +20,7 @@ const showKontakt = () => currentComponent.value = 'kontakt'
 <template>
   <Menu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
   <!-- Använd v-if för att visa rätt komponent baserat på currentComponent -->
+  <HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
   <Om v-if="currentComponent === 'om'" />
   <Projekt v-if="currentComponent === 'projekt'" />
   <Foot />

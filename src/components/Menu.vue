@@ -132,7 +132,7 @@ const props = defineProps<{
     flex-direction: column;
     width: 95vw;
     padding-top: 15px;
-}
+    }
     ul {
         margin: 0;
         padding: 0;

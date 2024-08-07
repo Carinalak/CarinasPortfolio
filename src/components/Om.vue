@@ -21,8 +21,7 @@
             och är på mitt andra år
             nu. På den här sidan 
             hittar du några av de 
-            projekt jag gjort och lite
-            annat smått och gott.  
+            projekt jag gjort och annat intressant.
         </div>
         <div class="citat2">Enjoy</div>
     </article>
