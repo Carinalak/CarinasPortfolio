@@ -7,7 +7,7 @@ const props = defineProps<{
   showKontakt: () => void
 }>()
 
-
+const emit = defineEmits(['toggleHamburgerMenu'])
 
 
 </script>
@@ -21,7 +21,7 @@ const props = defineProps<{
                 <li @click="props.showProjekt" class="menu-link">Projekt</li>
                 <li @click="props.showKontakt" class="menu-link"><a href="Kontakt.vue">Kontakt</a></li>
             </ul>
-            <button class="toggle-menu" aria-label="Öppna meny">
+            <button class="toggle-menu" @click="emit('toggleHamburgerMenu')" aria-label="Öppna meny">
                 <span></span>
                 <span></span>
                 <span></span>

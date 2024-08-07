@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, defineEmits } from 'vue'
 
 const props = defineProps<{
   showOm: () => void,
@@ -7,7 +7,7 @@ const props = defineProps<{
   showKontakt: () => void
 }>()
 
-
+const emit = defineEmits(['toggleHamburgerMenu'])
 
 
 
@@ -16,7 +16,7 @@ const props = defineProps<{
   
 <nav class="hamburger-links">
     <ul>
-        <li class="close-menu-box">
+        <li class="close-menu-box" @click="emit('toggleHamburgerMenu')">
             <div>Menu</div>
         <svg class="close-menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg></li>
@@ -31,12 +31,15 @@ const props = defineProps<{
 </template>
 <style scoped>
 .hamburger-links {
-    display: flex;
-    flex-direction: column;
-    align-items: last baseline;
-    margin-top: 0;
-    z-index: 99;
-    display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  z-index: 99;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+    
 }
 
 ul {
