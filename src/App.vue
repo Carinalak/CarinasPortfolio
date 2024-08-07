@@ -6,14 +6,6 @@ import HamburgerMenu from './components/HamburgerMenu.vue'
 import Projekt from './components/Projekt.vue'
 import Foot from './components/Foot.vue'
 
-// OLD
-/*
-const currentComponent = ref('om')
-
-const showOm = () => currentComponent.value = 'om'
-const showProjekt = () => currentComponent.value = 'projekt'
-const showKontakt = () => currentComponent.value = 'kontakt'
-*/
 
 const currentComponent = ref('om')
 const isHamburgerMenuOpen = ref(false)
@@ -43,20 +35,13 @@ const toggleHamburgerMenu = () => {
 </script>
 
 <template>
-  <!-- OLD 
-  <Menu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
-  <HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt"/>
-  <Om v-if="currentComponent === 'om'" />
-  <Projekt v-if="currentComponent === 'projekt'" />
-  <Foot />
 
--->
 
 <Menu  :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" @toggleHamburgerMenu="toggleHamburgerMenu"/>
-  <HamburgerMenu v-if="isHamburgerMenuOpen" :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" @toggleHamburgerMenu="toggleHamburgerMenu"/>
-  <Om v-if="currentComponent === 'om'" />
-  <Projekt v-if="currentComponent === 'projekt'" />
-  <Foot />
+<HamburgerMenu :showOm="showOm" :showProjekt="showProjekt" :showKontakt="showKontakt" :isOpen="isHamburgerMenuOpen" @toggleHamburgerMenu="toggleHamburgerMenu"/>
+<Om v-if="currentComponent === 'om'" />
+<Projekt v-if="currentComponent === 'projekt'" />
+<Foot />
 
 
 

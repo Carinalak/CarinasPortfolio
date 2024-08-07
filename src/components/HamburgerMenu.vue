@@ -4,17 +4,17 @@ import { defineProps, defineEmits } from 'vue'
 const props = defineProps<{
   showOm: () => void,
   showProjekt: () => void,
-  showKontakt: () => void
+  showKontakt: () => void,
+  isOpen: boolean
 }>()
 
 const emit = defineEmits(['toggleHamburgerMenu'])
 
 
-
 </script>
 <template>
   
-<nav class="hamburger-links">
+<nav class="hamburger-links" :class="{ open: isOpen }">
     <ul>
         <li class="close-menu-box" @click="emit('toggleHamburgerMenu')">
             <div>Menu</div>
@@ -30,66 +30,76 @@ const emit = defineEmits(['toggleHamburgerMenu'])
 
 </template>
 <style scoped>
+
+
 .hamburger-links {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hide off-screen */
+  width: 300px;
+  /*height: 100%;*/
+  background-color: #325072;
+  color: #F5F5F5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0;
+  transition: right 0.5s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 99;
-  position: absolute;
-  top: 10px;
-  right: 5px;
-    
+}
+
+.hamburger-links.open {
+  right: 0; /* Slide in on open */
 }
 
 ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        background-color: #325072;
-        color: #F5F5F5;
-        padding: 10px;
-        width: 300px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        
-    }
-li {
-    border-bottom: 1px solid #4C6A8D;
-    padding: 10px;
-    padding-left: 30px;
-    width: 300px;
-    text-align: center;
-    text-align: left;
-}
-.hamburger-menu-link {
-    cursor: pointer;
-}
-.close-menu-box {
-    position: relative;
-    
-    
-    display: flex;
-    align-items: center;
-}
-.close-menu-icon {
-    fill: #F5F5F5;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 25px;
-    top: 0;
-    stroke: #325072;
-    cursor: pointer;
-}
-@media screen and (min-width: 640px) {
-    .hamburger-links {
-        display: none;
-    }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding-top: 50px;
+  padding: 10px;
 }
 
+
+li {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  border-bottom: 1px solid #4C6A8D;
+}
+
+.hamburger-menu-link {
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.close-menu-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 2px;
+  margin-left: 25px;
+  font-weight: bold;
+}
+
+.close-menu-icon {
+  fill: #F5F5F5;
+  width: 30px;
+  height: 30px;
+  margin-right: 35px;
+  cursor: pointer;
+  
+}
+
+@media screen and (min-width: 640px) {
+  .hamburger-links {
+    display: none;
+  }
+}
 </style>
