@@ -20,18 +20,57 @@
             projekt kan du gå in 
             på min <a href="https://github.com/Carinalak" target="_blank" rel="noopener noreferrer">GitHub profil</a>.
         </div>
-        
-        <div class="citat2">Dream big, <br>
+    </article>    
+    <article> 
+        <div class="citat-dream">Dream big, <br>
             work hard!</div>
     </article>
-
-    <article>
-        
-    </article>
-
 </section>
-
-
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>Tic Tac Toe</h3></div>
+        <div>
+            Det här är ett tre i rad - spel 
+            som jag fick i uppgift att göra 
+            på Medieinstitutet våren 
+            2024. Den är gjord i Vue, 
+            som vi höll på att lära oss då. 
+            Jag använde mig av TypeScript.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/tictactoe.png"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>Butterfly animation</h3></div>
+        <div>
+            Vi fick i uppgift att göra en svg-
+            animation. Jag gjorde den här i 
+            Adobe Illustrator, och använde 
+            GSAP för att få fjärilen och bok-
+            stäverna att röra sig, i JavaScript.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://carinalak.github.io/Medieinstitutet-grafiska-verktyg-butterfly/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/butterfly.png"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>Gottfrids Badankor</h3></div>
+        <div>
+            En webbsida som jag gjorde 
+            när jag lärde mig JavaScript. 
+            Uppgiften gick ut på att göra en 
+            webshop. December 2023.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/gottfrids.png"></a></div>
+    </article>
+</section>
 
 
 
@@ -39,12 +78,19 @@
 
 </template>
 <style scoped>
-.citat2 {
+.citat-dream {
         display: block;
         font-family: "Caveat", cursive;
         font-size: 3.5rem;
         text-align: center;
-        padding-top: 80px;line-height: 3.5rem;
+        padding-top: 80px;
+        line-height: 3.5rem;
+        width: 350px;
         
+    }
+    
+    .image-size {
+        width: 350px;
+        border-radius: 10px;
     }
 </style>
