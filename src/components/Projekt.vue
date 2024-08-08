@@ -44,13 +44,27 @@
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>Att göra lista</h3></div>
+        <div>
+            Det här är en “att göra lista”
+            som är gjord med Vue, i maj 2024. 
+            Jag använde mest TypeScript. Sidan är inte responsiv, 
+            utan ser bäst ut i desktop-format.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://carinalak.github.io/Vue-TodoList/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/todolist.png"></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>Butterfly animation</h3></div>
         <div>
             Vi fick i uppgift att göra en svg-
-            animation. Jag gjorde den här i 
+            animation på Medieinstitutet i april 2024 i ämnet "Grafiska verktyg för gränsnittsdesign". Jag designade den här i 
             Adobe Illustrator, och använde 
             GSAP för att få fjärilen och bok-
-            stäverna att röra sig, i JavaScript.
+            stäverna att röra sig med JavaScript.
         </div>
     </article>
     <article>
@@ -61,16 +75,19 @@
     <article class="text-content">
         <div><h3>Gottfrids Badankor</h3></div>
         <div>
-            En webbsida som jag gjorde 
-            när jag lärde mig JavaScript. 
+            En webbsida som jag gjorde i december 2023 
+            när jag lärde mig JavaScript på Medieinstitutet.
             Uppgiften gick ut på att göra en 
-            webshop. December 2023.
+            webshop där det skulle gå att sortera 
+            produkterna effer kategori, pris och så vidare. 
+            Det skulle ha ett fungerande betalningsformulär. 
         </div>
     </article>
     <article>
         <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/gottfrids.png"></a></div>
     </article>
 </section>
+
 
 
 
