@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Menu from './components/Menu.vue'
-import Om from './components/Om.vue'
 import HamburgerMenu from './components/HamburgerMenu.vue'
+import Om from './components/Om.vue'
 import Projekt from './components/Projekt.vue'
+import Kontakt from './components/Kontakt.vue'
 import Foot from './components/Foot.vue'
 
 
@@ -43,6 +44,7 @@ const toggleHamburgerMenu = () => {
       <main class="main-content">
         <Om v-if="currentComponent === 'om'" />
         <Projekt v-if="currentComponent === 'projekt'" />
+        <Kontakt v-if="currentComponent === 'kontakt'" />
       </main>
       <Foot />
     </div>

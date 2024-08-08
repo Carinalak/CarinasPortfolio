@@ -26,6 +26,7 @@ h2 {
   font-size: 2rem;
   color: #A1D2E2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 h3 {
   font-family: Roboto, sans-serif;
@@ -41,6 +42,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 30px;
+
 }
 .main-container-align-top {
   display: flex;

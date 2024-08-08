@@ -26,6 +26,9 @@
             work hard!</div>
     </article>
 </section>
+<section>
+    <div class="citat-line">~ ~ ~</div>
+</section>
 <section class="main-container-align-top">
     <article class="text-content">
         <div><h3>Tic Tac Toe</h3></div>
@@ -35,7 +38,7 @@
             på Medieinstitutet våren 
             2024. Den är gjord i Vue, 
             som vi höll på att lära oss då. 
-            Jag använde mig av TypeScript.
+            Jag använde mig av TypeScript. Sidan är responsiv och fungerar bra i både mobil och desktop-läge.
         </div>
     </article>
     <article>
@@ -60,11 +63,9 @@
     <article class="text-content">
         <div><h3>Butterfly animation</h3></div>
         <div>
-            Vi fick i uppgift att göra en svg-
-            animation på Medieinstitutet i april 2024 i ämnet "Grafiska verktyg för gränsnittsdesign". Jag designade den här i 
+            Vi fick i uppgift att göra en svg-animation på Medieinstitutet i april 2024 i ämnet "Grafiska verktyg för gränsnittsdesign". Jag designade den här i 
             Adobe Illustrator, och använde 
-            GSAP för att få fjärilen och bok-
-            stäverna att röra sig med JavaScript.
+            GSAP för att få fjärilen och bokstäverna att röra sig med JavaScript. Sidan är inte responsiv, den ser bäst ut i desktop-format.
         </div>
     </article>
     <article>
@@ -96,18 +97,24 @@
 </template>
 <style scoped>
 .citat-dream {
-        display: block;
-        font-family: "Caveat", cursive;
-        font-size: 3.5rem;
-        text-align: center;
-        padding-top: 80px;
-        line-height: 3.5rem;
-        width: 350px;
-        
-    }
+    display: block;
+    font-family: "Caveat", cursive;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 80px;
+    line-height: 3.5rem;
+    width: 350px;
     
-    .image-size {
-        width: 350px;
-        border-radius: 10px;
-    }
+}
+.image-size {
+    width: 350px;
+    border-radius: 10px;
+}
+    
+.citat-line {
+  font-family: "Caveat", cursive;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 60px;
+}
 </style>
