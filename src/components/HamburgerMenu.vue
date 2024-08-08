@@ -92,7 +92,7 @@ li {
   fill: #F5F5F5;
   width: 30px;
   height: 30px;
-  margin-right: 35px;
+  margin-right: 25px;
   cursor: pointer;
   
 }

@@ -11,7 +11,7 @@
 
 
 <section class="main-container">
-    <article class="about">
+    <article class="text-content">
         <h2>Om</h2>
         <div>
             Hej! Mitt namn är 
@@ -50,16 +50,7 @@ img {
     width: 200px;
     height: 167.6px;
 }
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-.about {
-    width: 250px;
-}
+
 .citat1 {
         display: block;
         font-family: "Caveat", cursive;
@@ -80,12 +71,7 @@ img {
         height: 279.33px;
     }
 
-    .main-container {
-        padding-top: 30px;
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        
-    }
+    
     .citat1 {
         display: none;
     }
