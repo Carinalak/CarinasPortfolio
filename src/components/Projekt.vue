@@ -22,12 +22,9 @@
         </div>
     </article>    
     <article> 
-        <div class="citat-dream">Dream big, <br>
+        <div class="citat-dream1">Dream big, <br>
             work hard!</div>
     </article>
-</section>
-<section>
-    <div class="citat-line">~ ~ ~</div>
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
@@ -101,6 +98,13 @@
         <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/gottfrids.png"></a></div>
     </article>
 </section>
+<section class="main-container">
+    <article> 
+        <div class="citat-dream2">Dream big, <br>
+            work hard!</div>
+    </article>
+</section>
+
 
 
 
@@ -109,15 +113,18 @@
 
 </template>
 <style scoped>
-.citat-dream {
+.citat-dream1 {
+    display: none;
+   
+}
+.citat-dream2 {
     display: block;
     font-family: "Caveat", cursive;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-align: center;
     padding-top: 80px;
     line-height: 3.5rem;
     width: 350px;
-    
 }
 .image-size {
     width: 350px;
@@ -129,5 +136,21 @@
   font-size: 4rem;
   text-align: center;
   padding-top: 60px;
+}
+@media screen and (min-width: 640px) {
+
+    .citat-dream1 {
+        display: block;
+        font-family: "Caveat", cursive;
+        font-size: 3.5rem;
+        text-align: center;
+        padding-top: 80px;
+        line-height: 3.5rem;
+        width: 350px;
+    }
+
+    .citat-dream2 {
+        display: none;
+    }
 }
 </style>
