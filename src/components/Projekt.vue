@@ -16,9 +16,8 @@
         <div>
             Här kan du se några 
             av de projekt  jag 
-            gjort. Vill du se fler 
-            projekt kan du gå in 
-            på min <a href="https://github.com/Carinalak" target="_blank" rel="noopener noreferrer">GitHub profil</a>.
+            gjort. Fler 
+            projekt finns på min <a href="https://github.com/Carinalak" target="_blank" rel="noopener noreferrer">GitHub profil</a>.
         </div>
     </article>    
     <article> 
@@ -104,6 +103,22 @@
             work hard!</div>
     </article>
 </section>
+<section class="main-container">
+    <article> 
+        <div class="my-videos1">Lägg till en bild här<br>
+            på fiskar eller Stars</div>
+    </article>
+    <article class="text-content">
+        <h2>Mina videos</h2>
+        <div>Jag har haft många olika intressen. Till exempel att skriva musik och spela in videos till dem - Carina Stars. Musiken finns även på Spotify. Ett annat intresse jag haft är mitt akvarium. Då 
+            gjorde jag filmer om mina akvariefiskars liv och hur de pratar med varann på ett roligt sätt - Fiskbubbel.
+        </div>
+        <article> 
+        <div class="my-videos2">Lägg till en bild här<br>
+            på fiskar eller Stars</div>
+    </article>
+    </article>
+</section>
 
 
 
@@ -125,6 +140,13 @@
     padding-top: 80px;
     line-height: 3.5rem;
     width: 350px;
+}
+.my-videos1 {
+    display: none;
+}
+.my-videos2 {
+    display: block;
+    padding-top: 40px;
 }
 .image-size {
     width: 350px;
@@ -152,5 +174,11 @@
     .citat-dream2 {
         display: none;
     }
+    .my-videos1 {
+    display: block;
+}
+.my-videos2 {
+    display: none;
+}
 }
 </style>
