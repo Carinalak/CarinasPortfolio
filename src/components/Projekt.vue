@@ -47,6 +47,19 @@
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>The Brewery Club</h3></div>
+        <div>
+           Det här projektet gjorde vi i grupp. Vår grupp skulle göra en webbsida av en layout-design vi fick av en annan 
+           grupp i klassen. Layouten och planen för vilka effekter som skulle ingå gjordes i Figma och överlämnades till oss. 
+           Vi fick förverkliga den i en webbsida.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/breweryclub.png"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>Att göra lista</h3></div>
         <div>
             Det här är en “att göra lista”

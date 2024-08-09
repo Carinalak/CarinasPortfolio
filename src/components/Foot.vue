@@ -10,7 +10,9 @@
 
 
 <footer>
-    <div class="line"></div>
+    <div class="line-footer-top"></div>
+    <div class="copyright-text">&copy; Carina Lakosil 2024</div>
+    <div class="line-footer-bottom"></div>
     <div class="footer-icons-container">
         <div class="footer-icons">
             <a href="https://github.com/Carinalak" target="_blank" rel="noopener noreferrer">
@@ -38,11 +40,23 @@
 
 </template>
 <style scoped>
-
-.line {
+.copyright-text {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.line-footer-top {
+    margin-top: 50px;
     height: 1.2px;
     background: #f5f5f5;
-    margin-top: 50px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 95vw;
+}
+.line-footer-bottom {
+    height: 1.2px;
+    background: #f5f5f5;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
