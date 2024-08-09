@@ -4,7 +4,10 @@
   font-weight: 400;*/
   
 }
-
+:focus {
+  outline: none;
+  outline-offset: 0;
+}
 body {
   color: #F5F5F5;
   background-color: #4C6A8D;

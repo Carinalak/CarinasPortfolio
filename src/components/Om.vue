@@ -17,11 +17,14 @@
             Hej! Mitt namn är 
             Carina och jag bor i 
             Stockholm. Jag studerar 
-            till Front End Utvecklare 
+            till Front End Utvecklare på MedieInstitutet i Stockholm 
             och är på mitt andra år
             nu. På den här sidan 
             hittar du några av de 
             projekt jag gjort och annat intressant.
+            Jag letar just nu efter LIA-plats det får gärna vara på distans eller hybrid, då jag är 
+            väldigt duktig på att få mycket gjort när jag jobbar hemifrån. Om du är arbetsgivare och vill ha mitt CV, 
+            maila mig.
         </div>
         
         <div class="citat2">Enjoy</div>

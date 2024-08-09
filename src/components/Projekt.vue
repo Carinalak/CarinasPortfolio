@@ -111,7 +111,7 @@
     <article class="text-content">
         <h2>Mina videos</h2>
         <div>Jag har haft många olika intressen. Till exempel att skriva musik och spela in videos till dem - Carina Stars. Musiken finns även på Spotify. Ett annat intresse jag haft är mitt akvarium. Då 
-            gjorde jag filmer om mina akvariefiskars liv och hur de pratar med varann på ett roligt sätt - Fiskbubbel.
+            gjorde jag både filmer och bilder om mina akvariefiskars liv och hur de pratar med varann på ett roligt sätt - Fiskbubbel.
         </div>
         <article> 
         <div class="my-videos2">Lägg till en bild här<br>
@@ -176,9 +176,9 @@
     }
     .my-videos1 {
     display: block;
-}
-.my-videos2 {
-    display: none;
-}
+    }
+    .my-videos2 {
+        display: none;
+    }
 }
 </style>

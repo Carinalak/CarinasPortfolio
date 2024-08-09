@@ -11,7 +11,7 @@
     <article class="text-content">
         <h2>Kontakt</h2>
         <div>
-            Skicka ett mail så hör jag av mig!
+            Skicka ett mail så hör jag av mig! Är du arbetsgivare och vill ha mitt CV skickar jag det gärna. 
 
             carina.lakosil@gmail.com 
         </div>
