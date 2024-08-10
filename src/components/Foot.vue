@@ -10,6 +10,7 @@
 
 
 <footer>
+    
     <div class="line-footer-top"></div>
     <div class="copyright-text">&copy; Carina Lakosil 2024</div>
     <div class="line-footer-bottom"></div>

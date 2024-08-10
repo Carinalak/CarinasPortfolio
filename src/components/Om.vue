@@ -19,11 +19,14 @@
             Stockholm. Jag studerar 
             till Front End Utvecklare på MedieInstitutet
             och är på mitt andra år
-            nu. På den här sidan delar jag med mig av några av de 
+            nu. På den här sidan delar jag med mig av några 
             projekt jag gjort, både under studietiden, men även utanför.
+            Höstterminen 2024 börjar vi med att lära oss React.
+        </p>
+        <p>
             Jag letar just nu efter LIA-plats med början denna höst. Om du är arbetsgivare och vill ha mitt CV, 
             maila mig.
-            Vår hösttermin 2024 börjar vi med att lära oss React.
+            
         </p>
         
         <div class="citat2">Enjoy</div>
@@ -74,10 +77,10 @@
                 Ux-design
             </li>
             <li>
-                
+                API, MAMP, MySql
             </li>
             <li>
-                
+                Testning
             </li>
             <li>
                 

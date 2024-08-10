@@ -38,7 +38,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/tictactoe.png"/></a></div>
+        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -51,7 +51,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/breweryclub.png"/></a></div>
+        <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/breweryclub.png"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -65,7 +65,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Vue-TodoList/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/todolist.png"></a></div>
+        <div><a href="https://carinalak.github.io/Vue-TodoList/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/todolist.png"></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -78,7 +78,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Medieinstitutet-grafiska-verktyg-butterfly/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/butterfly.png"/></a></div>
+        <div><a href="https://carinalak.github.io/Medieinstitutet-grafiska-verktyg-butterfly/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/butterfly.png"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -94,7 +94,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-size" src=".././assets/img/gottfrids.png"></a></div>
+        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png"></a></div>
     </article>
 </section>
 <section class="main-container">
@@ -103,19 +103,28 @@
             work hard!</div>
     </article>
 </section>
-<section class="main-container">
+<section class="main-container-align-top">
     <article> 
-        <div class="my-videos1">Lägg till en bild här<br>
-            på fiskar eller Stars</div>
+        <figure class="my-videos1">
+            <a href="https://www.youtube.com/@carinastars1/videos" target="_blank" rel="noopener noreferrer"><img class="image-style" src="../assets/img/sinceTheDay.png" alt="Carina Stars - en tjej med lila akustisk gitarr går vid havet. Träden runt henne har orange blad."/></a>
+            <figcaption>En YouTube-kanal med musikvideos av Carina Stars.</figcaption>
+            <a href="https://www.youtube.com/@fiskbubbel6448/videos" target="_blank" rel="noopener noreferrer"><img class="image-style" src="../assets/img/fiskbubbel.png" alt="Roliga akvariefiskar. Fiskbubbel - länk till youtube-kanalen." /></a>
+            <figcaption>Fiskbubbel. En YouTube-kanal om akvariefiskars hemliga liv.</figcaption>
+        
+        </figure>
     </article>
     <article class="text-content">
         <h2>Mina videos</h2>
         <div>Jag har haft många olika intressen. Till exempel att skriva musik och spela in videos till dem - Carina Stars. Musiken finns även på Spotify. Ett annat intresse jag haft är mitt akvarium. Då 
             gjorde jag både filmer och bilder om mina akvariefiskars liv och hur de pratar med varann på ett roligt sätt - Fiskbubbel.
         </div>
-        <article> 
-        <div class="my-videos2">Lägg till en bild här<br>
-            på fiskar eller Stars</div>
+        <article class="text-content"> 
+        <figure class="my-videos2">
+            <a href="https://www.youtube.com/@carinastars1/videos" target="_blank" rel="noopener noreferrer"><img class="image-style" src="../assets/img/sinceTheDay.png" alt="Carina Stars - en tjej med lila akustisk gitarr går vid havet. Träden runt henne har orange blad."/></a>
+            <figcaption>En YouTube-kanal med musikvideos av Carina Stars.</figcaption>
+            <a href="https://www.youtube.com/@fiskbubbel6448/videos" target="_blank" rel="noopener noreferrer"><img class="image-style" src="../assets/img/fiskbubbel.png" alt="Roliga akvariefiskar. Fiskbubbel - länk till youtube-kanalen." /></a>
+            <figcaption>Fiskbubbel. En YouTube-kanal om akvariefiskars hemliga liv.</figcaption>
+        </figure>
     </article>
     </article>
 </section>
@@ -145,12 +154,15 @@
     display: none;
 }
 .my-videos2 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 40px;
 }
-.image-size {
+.image-style {
     width: 350px;
     border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
     
 .citat-line {
@@ -158,6 +170,13 @@
   font-size: 4rem;
   text-align: center;
   padding-top: 60px;
+}
+figcaption {
+    margin-top: 1px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    width: 350px;
+    text-align: center;
 }
 @media screen and (min-width: 640px) {
 

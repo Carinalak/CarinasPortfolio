@@ -8,6 +8,7 @@ import Kontakt from './components/Kontakt.vue'
 import Foot from './components/Foot.vue'
 
 
+
 const currentComponent = ref('om')
 const isHamburgerMenuOpen = ref(false)
 
