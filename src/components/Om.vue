@@ -1,5 +1,6 @@
 <script setup lang="ts">
-
+import LadyBug from './LadyBug.vue';
+import { gsap } from 'gsap';
 
 
 
@@ -40,6 +41,7 @@
     <article> 
         <!--<div class="image1">Lägg till en bild här 1</div>-->
         <div class="citat1">Enjoy</div>
+        <LadyBug/>
     </article>
     <article class="text-content">
         <h2>Mina kunskaper</h2>
