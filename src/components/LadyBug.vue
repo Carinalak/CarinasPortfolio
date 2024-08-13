@@ -43,7 +43,6 @@ const moveLadybug = () => {
         case 5:
           // Sjätte klicket: rotera tillbaka till 0 grader, flytta uppåt och återgå till ursprungsposition
           timeline
-         
           .to(ladybugRef.value, { rotation: 0, transformOrigin: "center center", duration: 0.5 });
         break;
     } 
