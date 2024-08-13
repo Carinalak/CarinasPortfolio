@@ -29,18 +29,15 @@ import LadyBug from './LadyBug.vue';
             
         </p>
         
-        <!--<div class="citat1">Enjoy</div>-->
     </article>
     <article>
         <img src="../assets/img/CarinaFoto24.png" alt="En bild på en glad tjej i halvlångt brunt hår och glasögon.">
     </article>
 
 </section>
-<section class="main-container">
-    <article> 
-        <!--<div class="image1">Lägg till en bild här 1</div>-->
-        <!--<div class="citat1">Enjoy</div>-->
-        <LadyBug/>
+<section class="main-container-align-top">
+    <article class="text-content"> 
+        <LadyBug class="ladybug-tablet"/>
     </article>
     <article class="text-content">
         <h2>Mina kunskaper</h2>
@@ -86,24 +83,14 @@ import LadyBug from './LadyBug.vue';
             </li>
         </ul>
     </div>
-    <article> 
-        <!--<div class="image2">Lägg till en bild här 2</div>-->
-        
-    </article>
-    </article>
-</section>
-<!--
-<section class="main-container-align-top">
-    <article class="main-container-top-left">
-        <p>Jag testar</p>
-    </article>
-    <article></article>
-</section>
--->
-<section>
-        <div class="citat2">Enjoy</div>
-</section>
+</article>
 
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
+        <LadyBug class="ladybug-mobil"/>
+    </article>
+</section>
 
 
 
@@ -119,6 +106,15 @@ img {
     width: 200px;
     height: 167.6px;
 }
+.ladybug-tablet {
+    display: none;
+}
+.ladybug-mobil {
+    visibility: visible;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
 .citat1 {
         display: none;
         font-family: "Caveat", cursive;
@@ -145,6 +141,14 @@ img {
 }
 /*----------------- TABLET -----------------------*/
 @media screen and (min-width: 640px) {
+    
+    .ladybug-tablet {
+        display: contents;
+        padding-top: 200px;
+    }
+    .ladybug-mobil {
+    visibility: hidden;
+    }
     img {
         width: 333.33px;
         height: 279.33px;

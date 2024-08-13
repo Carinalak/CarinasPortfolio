@@ -26,6 +26,7 @@ h1 {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 3rem;
+  
 }
 h2 {
   font-family: Roboto, sans-serif;
@@ -57,10 +58,13 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding-top: 60px;
+ /* padding-top: 60px;*/
+ padding-top: 0;
+ /* border: 1px solid red;*/
 }
 .text-content {
   width: 300px;
+ /* border: 1px solid red;*/
 }
 a {
   font-weight: 500;
@@ -80,6 +84,8 @@ a:hover {
 
   h2 {
     font-size: 2.2rem;
+    padding-top: 0;
+    margin-top: 0;
   }
   .citat {
     font-family: "Caveat", cursive;
@@ -103,6 +109,7 @@ a:hover {
   .text-content {
     width: 25%;
   }
+
 }
 
 

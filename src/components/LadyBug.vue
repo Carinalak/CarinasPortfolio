@@ -11,7 +11,7 @@ const moveLadybug = () => {
   if (ladybugRef.value) {
     const timeline = gsap.timeline();
 
-    switch (clickCount.value % 6) {
+    switch (clickCount.value % 5) {
       case 0:
         // Första klicket: flytta åt höger
         gsap.to(ladybugRef.value, { x: "+=100", duration: 1 });
@@ -31,20 +31,16 @@ const moveLadybug = () => {
       case 3:
         // Fjärde klicket: rotera 270 grader och flytta uppåt 
         timeline
-        .to (ladybugRef.value, {rotation: 270, transformOrigin: "center center", duration: 0.5})
-        .to(ladybugRef.value, { y: "-=100", duration: 0.5 });   
-        break;
+          .to (ladybugRef.value, {rotation: 270, transformOrigin: "center center", duration: 0.5})
+          .to(ladybugRef.value, { y: "-=100", duration: 0.5 });   
+          break;
         case 4:
           // Femte klicket: rotera 180 grader och flytta till vänster
           timeline
-          .to(ladybugRef.value, { rotation: 180, transformOrigin: "center center", duration: 0.5 })
-          .to(ladybugRef.value, { x: "-=100", duration: 0.5 })
-        break;
-        case 5:
-          // Sjätte klicket: rotera tillbaka till 0 grader, flytta uppåt och återgå till ursprungsposition
-          timeline
-          .to(ladybugRef.value, { rotation: 0, transformOrigin: "center center", duration: 0.5 });
-        break;
+          .to(ladybugRef.value, { rotation: 360, transformOrigin: "center center", duration: 0.5 })
+          .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
+          break;
+        
     } 
     clickCount.value++;
   }
@@ -61,8 +57,9 @@ onMounted(() => {
 
 <template>
 
-<div class="container">
-  
+<div class="ladybug-box">
+<div class="ladybug-text">Nyckelpigan gillar inte att bli klickad på. Låt den vara ifred.</div>
+<div class="ladybug-container">
 <svg ref="ladybugRef" id="ladybug" viewBox="88.907 129.718 100.523 86.33" width="52.164" height="44.648" xmlns="http://www.w3.org/2000/svg">
   <line id="LegLeft1" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" x1="158.158" y1="148.817" x2="167.178" y2="138.594"></line>
   <line id="LegLeft2" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" x1="134.321" y1="141.785" x2="136.726" y2="131.562"></line>
@@ -110,21 +107,30 @@ onMounted(() => {
     <ellipse id="BlobRight" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" cx="154.855" cy="194.328" rx="1.342" ry="1.342"></ellipse>
   </g>
 </svg>
-<div ref="textRef" class="animated-text"></div>
+</div>
+
 </div>
 </template>
 
 
 <style scoped>
 #ladybug {
-  position: absolute;
   cursor: pointer;
 }
 .animated-text {
-  position: absolute;
+  
   font-size: 2rem;
   color: #FFFFFF;
   white-space: nowrap;
   transform: translate(52.164px, 0); /* Initial position */
 }
+.ladybug-text {
+  padding-bottom: 50px;
+  margin-top: 0;
+  padding-top: 0;
+}
+.ladybug-box {
+
+}
+
 </style>
