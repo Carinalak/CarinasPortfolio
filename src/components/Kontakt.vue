@@ -11,9 +11,10 @@
     <article class="text-content">
         <h2>Kontakt</h2>
         <div>
+            Jag finns på Ekerö, nära Stockholm. 
             Skicka ett mail så hör jag av mig! Är du arbetsgivare och vill ha mitt CV skickar jag det gärna. 
 
-            carina.lakosil@gmail.com 
+            <a href="mailto:carina.lakosil@gmail.com">carina.lakosil@gmail.com </a>
         </div>
     </article>
 

@@ -89,7 +89,7 @@
             när jag lärde mig JavaScript på Medieinstitutet.
             Uppgiften gick ut på att göra en 
             webshop där det skulle gå att sortera 
-            produkterna effer kategori, pris och så vidare. 
+            produkterna efter kategori, pris och så vidare. 
             Det skulle ha ett fungerande betalningsformulär. 
         </div>
     </article>

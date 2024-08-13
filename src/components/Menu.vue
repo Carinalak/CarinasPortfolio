@@ -126,7 +126,6 @@ const emit = defineEmits(['toggleHamburgerMenu'])
     .toggle-menu {
         display: none;
     }
-
     .header-objects {
     display: flex;
     flex-direction: column;
@@ -149,38 +148,23 @@ const emit = defineEmits(['toggleHamburgerMenu'])
         font-size: 1.4rem;
         cursor: pointer;
     }
+    /*
     .menu-link a {
         color: #f5f5f5;
     }
     .menu-link a:hover {
         color: #a1d2e2;
-       
     }
     .menu-link a:active {
-        color: #041c39;
-        
+        color: #041c39;   
     }
     .menu-links {
         display: flex;
         justify-content: flex-end;
         margin-right: 30px;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-    .menu-link {
-        visibility: visible;
-        color: #f5f5f5;
-        font-family: Roboto, "Sans-serif";
-        font-weight: bold;
-        font-size: 1.4rem;
-        cursor: pointer;
-    }
+    }*/
+
+
     .menu-link:hover {
         color: #a1d2e2;
     }
