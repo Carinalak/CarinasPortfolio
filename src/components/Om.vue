@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import LadyBug from './LadyBug.vue';
-import { gsap } from 'gsap';
 
 
 

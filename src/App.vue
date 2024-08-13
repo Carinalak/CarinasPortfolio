@@ -6,7 +6,6 @@ import Om from './components/Om.vue'
 import Projekt from './components/Projekt.vue'
 import Kontakt from './components/Kontakt.vue'
 import Foot from './components/Foot.vue'
-import { gsap } from 'gsap';
 
 
 
