@@ -11,6 +11,8 @@ const moveLadybug = () => {
     const timeline = gsap.timeline();
     const rightWing = ladybugRef.value.querySelector("#RightWing");
     const leftWing = ladybugRef.value.querySelector("#LeftWing");
+    const eyeBlackLeft = ladybugRef.value.querySelector("#EyeBlackLeft");
+    const eyeBlackRight = ladybugRef.value.querySelector("#EyeBlackRight");
 
     switch (clickCount.value % 6) {
       case 0:
@@ -52,8 +54,12 @@ const moveLadybug = () => {
           .to(ladybugRef.value, { rotation: 0, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }) // Reset position
           .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 })
-          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<"); // "<" betyder att båda vingarna rör sig samtidigt
-        break;
+          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<") // "<" betyder att båda vingarna rör sig samtidigt
+          .to(eyeBlackLeft, { x: "-=2", duration: 0.9 })
+          .to(eyeBlackRight, { x: "-=2", duration: 0.9 }, "<")
+          .to(eyeBlackLeft, { x: "0", duration: 0.3 })
+          .to(eyeBlackRight, { x: "0", duration: 0.3 }, "<");
+          break;
     } 
     clickCount.value++;
   }
