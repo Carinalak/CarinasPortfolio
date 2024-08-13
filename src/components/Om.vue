@@ -40,7 +40,7 @@ import { gsap } from 'gsap';
 <section class="main-container">
     <article> 
         <!--<div class="image1">Lägg till en bild här 1</div>-->
-        <div class="citat1">Enjoy</div>
+        <!--<div class="citat1">Enjoy</div>-->
         <LadyBug/>
     </article>
     <article class="text-content">
