@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 !node_modules/gsap/
+!node_modules/gsap/dist/
 
 # Editor directories and files
 .vscode/*
