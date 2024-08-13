@@ -11,12 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
-!node_modules/gsap/
-!node_modules/gsap/dist/
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!node_modules/gsap/
+!node_modules/gsap/dist/
 .idea
 .DS_Store
 *.suo
