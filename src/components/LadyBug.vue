@@ -11,7 +11,7 @@ const moveLadybug = () => {
   if (ladybugRef.value) {
     const timeline = gsap.timeline();
 
-    switch (clickCount.value % 5) {
+    switch (clickCount.value % 6) {
       case 0:
         // Första klicket: flytta åt höger
         gsap.to(ladybugRef.value, { x: "+=100", duration: 1 });
@@ -40,7 +40,12 @@ const moveLadybug = () => {
           .to(ladybugRef.value, { rotation: 360, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
           break;
-        
+        case 5:
+          // Sjätte klicket: rotera runt och flaxa med vingarna?
+          timeline
+          .to(ladybugRef.value, { rotation: 0, transformOrigin: "center center", duration: 0.5 })
+          .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
+        break;
     } 
     clickCount.value++;
   }
@@ -117,20 +122,23 @@ onMounted(() => {
 #ladybug {
   cursor: pointer;
 }
-.animated-text {
-  
-  font-size: 2rem;
-  color: #FFFFFF;
-  white-space: nowrap;
-  transform: translate(52.164px, 0); /* Initial position */
-}
+
 .ladybug-text {
   padding-bottom: 50px;
   margin-top: 0;
   padding-top: 0;
 }
 .ladybug-box {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.ladybug-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: 100px; /* eller någon lämplig höjd */
+}
 </style>
