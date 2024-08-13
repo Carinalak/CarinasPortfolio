@@ -6,21 +6,27 @@ import { gsap } from 'gsap';
 
 const ladybugRef = ref<SVGSVGElement | null>(null);
 const clickCount = ref(0);
-
 const moveLadybug = () => {
   if (ladybugRef.value) {
     const timeline = gsap.timeline();
+    const rightWing = ladybugRef.value.querySelector("#RightWing");
+    const leftWing = ladybugRef.value.querySelector("#LeftWing");
 
     switch (clickCount.value % 6) {
       case 0:
-        // Första klicket: flytta åt höger
-        gsap.to(ladybugRef.value, { x: "+=100", duration: 1 });
+        // Första klicket: flytta åt höger och flaxa med vingarna
+        timeline
+        .to(ladybugRef.value, { x: "+=100", duration: 1 })
+          .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 })
+          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<");
+        
         break;
       case 1:
         // Andra klicket: rotera 90 grader och flytta neråt
         timeline
           .to(ladybugRef.value, { rotation: 90, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { y: "+=100", duration: 0.5 });
+          
         break;
       case 2:
         // Tredje klicket: rotera 180 grader och flytta åt vänster
@@ -34,17 +40,19 @@ const moveLadybug = () => {
           .to (ladybugRef.value, {rotation: 270, transformOrigin: "center center", duration: 0.5})
           .to(ladybugRef.value, { y: "-=100", duration: 0.5 });   
           break;
-        case 4:
-          // Femte klicket: rotera 180 grader och flytta till vänster
-          timeline
+      case 4:
+        // Femte klicket: rotera 360 grader och reset position
+        timeline
           .to(ladybugRef.value, { rotation: 360, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
           break;
-        case 5:
-          // Sjätte klicket: rotera runt och flaxa med vingarna?
-          timeline
+      case 5:
+        // Sjätte klicket: rotera runt och flaxa med vingarna
+        timeline
           .to(ladybugRef.value, { rotation: 0, transformOrigin: "center center", duration: 0.5 })
-          .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
+          .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }) // Reset position
+          .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 })
+          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<"); // "<" betyder att båda vingarna rör sig samtidigt
         break;
     } 
     clickCount.value++;
@@ -56,7 +64,6 @@ onMounted(() => {
     ladybugRef.value.addEventListener('click', moveLadybug);
   }
 });
-
 </script>
 
 
