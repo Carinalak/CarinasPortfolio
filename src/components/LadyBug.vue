@@ -13,6 +13,8 @@ const moveLadybug = () => {
     const leftWing = ladybugRef.value.querySelector("#LeftWing");
     const eyeBlackLeft = ladybugRef.value.querySelector("#EyeBlackLeft");
     const eyeBlackRight = ladybugRef.value.querySelector("#EyeBlackRight");
+    const tongue = ladybugRef.value.querySelector("#Tongue");
+    const body = ladybugRef.value.querySelector("#Body");
 
     switch (clickCount.value % 6) {
       case 0:
@@ -27,26 +29,35 @@ const moveLadybug = () => {
         // Andra klicket: rotera 90 grader och flytta neråt
         timeline
           .to(ladybugRef.value, { rotation: 90, transformOrigin: "center center", duration: 0.5 })
-          .to(ladybugRef.value, { y: "+=100", duration: 0.5 });
+          .to(ladybugRef.value, { y: "+=100", duration: 0.5 })
+          .to(tongue, { opacity: 8, duration: 0.9 }) // Gör tungan synlig  
+          .to(tongue, { opacity: 0, duration: 0.2 });
           
         break;
       case 2:
         // Tredje klicket: rotera 180 grader och flytta åt vänster
         timeline
           .to(ladybugRef.value, { rotation: 180, transformOrigin: "center center", duration: 0.5 })
-          .to(ladybugRef.value, { x: "-=100", duration: 0.5 });
+          .to(ladybugRef.value, { x: "-=100", duration: 0.5 })
+          .to(body, { y: "+=1", duration: 0.1, yoyo: true, repeat: 5 }) // Skaka kroppen uppåt och nedåt
+          .to(body, { rotation: 2, duration: 0.1, yoyo: true, repeat: 5 }, "<") // Skaka kroppen fram och tillbaka
+          .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<")
+          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<");
         break;
       case 3:
         // Fjärde klicket: rotera 270 grader och flytta uppåt 
         timeline
           .to (ladybugRef.value, {rotation: 270, transformOrigin: "center center", duration: 0.5})
-          .to(ladybugRef.value, { y: "-=100", duration: 0.5 });   
+          .to(ladybugRef.value, { y: "-=100", duration: 0.5 })
+          .to(tongue, { opacity: 8, duration: 0.9 }) // Gör tungan synlig  
+          .to(tongue, { opacity: 0, duration: 0.2 });
           break;
       case 4:
         // Femte klicket: rotera 360 grader och reset position
         timeline
           .to(ladybugRef.value, { rotation: 360, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { x: 0, y: 0, duration: 0.5 }); // Reset position
+          
           break;
       case 5:
         // Sjätte klicket: rotera runt och flaxa med vingarna
@@ -93,7 +104,7 @@ onMounted(() => {
     <path id="BackLine4" style="stroke-linecap: round; stroke: rgb(175, 190, 172); fill: rgb(78, 77, 77);" d="M 112.664 146.084 L 109.446 172.143 L 112.665 197.31"></path>
     <path id="BackLine5" style="stroke-linecap: round; stroke: rgb(175, 190, 172); fill: rgb(78, 77, 77);" d="M 101.602 152.85 L 98.432 173.082 L 102.031 191.19"></path>
   </g>
-  <ellipse id="Tongue" style="paint-order: fill; fill: rgb(239, 11, 11); stroke: rgb(130, 11, 11);" cx="179.96" cy="170.49" rx="7.199" ry="5.526"></ellipse>
+  <ellipse id="Tongue" class="tongue" style="paint-order: fill; fill: rgb(239, 11, 11); stroke: rgb(130, 11, 11);" cx="179.96" cy="170.49" rx="7.199" ry="5.526"></ellipse>
   
   <g id="RightWing" style="">
     <path id="WingRight" style="stroke: rgb(0, 0, 0); fill: rgb(234, 16, 16); transform-origin: 134.135px 187.222px;" d="M 174.626 173.035 L 93.652 171.461 C 94.711 195.387 119.816 202.43 130.883 202.699 C 154.767 204.872 174.868 194.078 174.626 173.035 Z" transform="matrix(0.978148, -0.207911, 0.207911, 0.978148, 0, 0.000002)"></path>
@@ -153,5 +164,10 @@ onMounted(() => {
   align-items: center;
   width: 100%; 
   height: 100px; /* eller någon lämplig höjd */
+}
+
+.tongue {
+  opacity: 0;
+  transition: opacity 0.9s;
 }
 </style>
