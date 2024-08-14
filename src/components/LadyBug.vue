@@ -1,6 +1,6 @@
 
 <script lang="ts" setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
 
 
@@ -77,38 +77,6 @@ const moveLadybug = () => {
   }
 };
 
-onMounted(() => {
-  if (ladybugRef.value) {
-    ladybugRef.value.addEventListener('click', moveLadybug);
-    ladybugRef.value.addEventListener('mousedown', () => {
-      if (ladybugRef.value) {
-        ladybugRef.value.style.backgroundColor = 'transparent';
-      }
-    });
-    ladybugRef.value.addEventListener('mouseup', () => {
-      if (ladybugRef.value) {
-        ladybugRef.value.style.backgroundColor = '';
-      }
-    });
-  }
-});
-onBeforeUnmount(() => {
-  if (ladybugRef.value) {
-    ladybugRef.value.removeEventListener('click', moveLadybug);
-    ladybugRef.value.removeEventListener('mousedown', () => {
-      if (ladybugRef.value) {
-        ladybugRef.value.style.backgroundColor = 'transparent';
-      }
-    });
-    ladybugRef.value.removeEventListener('mouseup', () => {
-      if (ladybugRef.value) {
-        ladybugRef.value.style.backgroundColor = '';
-      }
-    });
-  }
-});
-
-/*
 const handleClick = () => {
   if (ladybugRef.value) {
     ladybugRef.value.style.backgroundColor = 'transparent';
@@ -120,7 +88,7 @@ onMounted(() => {
     ladybugRef.value.addEventListener('click', moveLadybug);
     ladybugRef.value.addEventListener('click', handleClick);
   }
-});*/
+});
 </script>
 
 
@@ -187,26 +155,9 @@ onMounted(() => {
   cursor: pointer;
   outline: none;
   outline-offset: 0;
-}
-/*
-#ladybug :active {
   background-color: transparent;
-  outline: none;
-  outline-offset: 0;
 }
 
-#ladybug :focus {
-  background-color: transparent;
-  outline: none;
-  outline-offset: 0;
-}
-
-#ladybug ::selection {
-  background-color: transparent;
-  outline: none;
-  outline-offset: 0;
-}
-*/
 .ladybug-text {
   padding-bottom: 50px;
   margin-top: 0;

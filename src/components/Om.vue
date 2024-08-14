@@ -100,6 +100,9 @@ img {
     visibility: visible;
     padding-top: 40px;
     padding-bottom: 100px;
+    outline: none;
+    outline-offset: 0;
+    background-color: transparent;
 }
 .citat1 {
         display: none;
@@ -139,6 +142,9 @@ img {
     .ladybug-tablet {
         display: contents;
         padding-top: 200px;
+        outline: none;
+        outline-offset: 0;
+        background-color: transparent;
     }
     .ladybug-mobil {
     visibility: hidden;
