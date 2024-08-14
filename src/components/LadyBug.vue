@@ -148,11 +148,24 @@ onMounted(() => {
   cursor: pointer;
   outline: none;
   outline-offset: 0;
-  background-color: transparent;
 }
 
 #ladybug :active {
   background-color: transparent;
+  outline: none;
+  outline-offset: 0;
+}
+
+#ladybug :focus {
+  background-color: transparent;
+  outline: none;
+  outline-offset: 0;
+}
+
+#ladybug ::selection {
+  background-color: transparent;
+  outline: none;
+  outline-offset: 0;
 }
 
 .ladybug-text {
@@ -164,7 +177,6 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
 }
 .ladybug-container {
   display: flex;
