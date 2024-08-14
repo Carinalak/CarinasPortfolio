@@ -157,11 +157,11 @@ onMounted(() => {
   outline: none;
   outline-offset: 0;
   background-color: transparent;
-}
+}*/
 #ladybug:active, #ladybug:focus {
   background-color: transparent;
   outline: none;
-}*/
+}
 .ladybug-text {
   padding-bottom: 50px;
   margin-top: 0;
