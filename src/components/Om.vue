@@ -100,9 +100,6 @@ img {
     visibility: visible;
     padding-top: 40px;
     padding-bottom: 100px;
-    outline: none; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
-    outline-offset: 0; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
-    background-color: transparent; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
 }
 .citat1 {
         display: none;
@@ -142,9 +139,7 @@ img {
     .ladybug-tablet {
         display: contents;
         padding-top: 200px;
-        outline: none; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
-        outline-offset: 0; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
-        background-color: transparent; /* Denna finns för att blå rutan ej ska synas vid tryck i mobil och padda. Hjälper det? */
+        width: 25%;
     }
     .ladybug-mobil {
     visibility: hidden;
