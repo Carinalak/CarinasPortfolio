@@ -14,7 +14,6 @@ const moveLadybug = () => {
     const eyeBlackLeft = ladybugRef.value.querySelector("#EyeBlackLeft");
     const eyeBlackRight = ladybugRef.value.querySelector("#EyeBlackRight");
     const tongue = ladybugRef.value.querySelector("#Tongue");
-    const body = ladybugRef.value.querySelector("#Body");
 
     switch (clickCount.value % 6) {
       case 0:
@@ -39,10 +38,12 @@ const moveLadybug = () => {
         timeline
           .to(ladybugRef.value, { rotation: 180, transformOrigin: "center center", duration: 0.5 })
           .to(ladybugRef.value, { x: "-=100", duration: 0.5 })
-          .to(body, { y: "+=1", duration: 0.1, yoyo: true, repeat: 5 }) // Skaka kroppen uppåt och nedåt
-          .to(body, { rotation: 2, duration: 0.1, yoyo: true, repeat: 5 }, "<") // Skaka kroppen fram och tillbaka
-          .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<")
-          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<");
+          .to(rightWing, { rotation: -20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 })
+          .to(leftWing, { rotation: 20, yoyo: true, repeat: 3, transformOrigin: "80% 50%", duration: 0.1 }, "<")
+          .to(eyeBlackLeft, { y: "+=3", x: "-=2", duration: 0.9 }, "<")
+          .to(eyeBlackRight, { y: "+=3", x: "-=2",  duration: 0.9 }, "<")
+          .to(eyeBlackLeft, { y: "0", x: "0", duration: 0.3 })
+          .to(eyeBlackRight, { y: "0", x: "0", duration: 0.3 }, "<");
         break;
       case 3:
         // Fjärde klicket: rotera 270 grader och flytta uppåt 
@@ -145,6 +146,8 @@ onMounted(() => {
 <style scoped>
 #ladybug {
   cursor: pointer;
+  outline: none;
+  outline-offset: 0;
 }
 
 .ladybug-text {
