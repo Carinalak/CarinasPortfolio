@@ -154,9 +154,9 @@ onMounted(() => {
 
 #ladybug {
   cursor: pointer;
-  outline: none;
+  /*outline: none;
   outline-offset: 0;
-  background-color: transparent;
+  background-color: transparent;*/
 }
 #ladybug:active, #ladybug:focus {
   background-color: transparent;
