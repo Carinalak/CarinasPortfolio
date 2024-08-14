@@ -161,12 +161,12 @@ onMounted(() => {
 #ladybug:active, #ladybug:focus {
   background-color: transparent;
   outline: none;
-}
+}*/
 .ladybug-text {
   padding-bottom: 50px;
   margin-top: 0;
   padding-top: 0;
-}*/
+}
 .ladybug-box {
   display: flex;
   flex-direction: column;
