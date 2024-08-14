@@ -183,10 +183,10 @@ onMounted(() => {
 
 /*---------------------- Desktop layout ---------------------- */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1124px) {
   #ladybug {
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
 
 }
 </style>
