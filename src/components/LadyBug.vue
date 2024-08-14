@@ -171,7 +171,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 .ladybug-container {
   display: flex;
   justify-content: center;
@@ -181,7 +181,7 @@ onMounted(() => {
   outline: none;
   outline-offset: 0;
   background-color: transparent;
-}*/
+}
 .tongue {
   opacity: 0;
   transition: opacity 0.9s;
