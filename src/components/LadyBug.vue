@@ -152,12 +152,6 @@ onMounted(() => {
 
 <style scoped>
 
-#ladybug {
-  cursor: pointer;
-  /*outline: none;
-  outline-offset: 0;
-  background-color: transparent;*/
-}
 #ladybug:active, #ladybug:focus {
   background-color: transparent;
   outline: none;
@@ -187,4 +181,12 @@ onMounted(() => {
   transition: opacity 0.9s;
 }
 
+/*---------------------- Desktop layout ---------------------- */
+
+@media screen and (min-width: 1024px) {
+  #ladybug {
+  cursor: pointer;
+}
+
+}
 </style>
