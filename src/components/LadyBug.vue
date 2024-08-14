@@ -151,13 +151,13 @@ onMounted(() => {
 
 
 <style scoped>
-/*
+
 #ladybug {
   cursor: pointer;
   outline: none;
   outline-offset: 0;
   background-color: transparent;
-}*/
+}
 #ladybug:active, #ladybug:focus {
   background-color: transparent;
   outline: none;
