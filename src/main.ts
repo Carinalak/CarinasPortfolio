@@ -5,6 +5,9 @@ import App from './App.vue'
 createApp(App).mount('#app')
 
 // ---------------- Check for updates every midnight ------------------------- //
+// Sidan reloadas varje midnatt och cashen töms, eftersom webbsidan hade problem på GitHub Pages
+// att den inte uppdaterades på mobil och padda när jag uppdaterade en nyare version på Git Hub.
+// Det här scriptet gör att cashen töms en gång per midnatt och sidan reloadas.
 
 const checkForUpdates = (): void => {
     fetch('version.txt', { cache: 'no-cache' })
