@@ -148,6 +148,11 @@ onMounted(() => {
   cursor: pointer;
   outline: none;
   outline-offset: 0;
+  background-color: transparent;
+}
+
+#ladybug :active {
+  background-color: transparent;
 }
 
 .ladybug-text {
@@ -159,6 +164,7 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: transparent;
 }
 .ladybug-container {
   display: flex;
@@ -168,6 +174,7 @@ onMounted(() => {
   height: 100px;
   outline: none;
   outline-offset: 0;
+  background-color: transparent;
 }
 .tongue {
   opacity: 0;
