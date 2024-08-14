@@ -166,6 +166,8 @@ onMounted(() => {
   align-items: center;
   width: 100%; 
   height: 100px;
+  outline: none;
+  outline-offset: 0;
 }
 .tongue {
   opacity: 0;

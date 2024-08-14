@@ -171,7 +171,7 @@
 }
 figcaption {
     margin-top: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     font-size: 1rem;
     width: 350px;
     text-align: center;
