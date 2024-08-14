@@ -77,9 +77,16 @@ const moveLadybug = () => {
   }
 };
 
+const handleClick = () => {
+  if (ladybugRef.value) {
+    ladybugRef.value.style.backgroundColor = 'transparent';
+  }
+};
+
 onMounted(() => {
   if (ladybugRef.value) {
     ladybugRef.value.addEventListener('click', moveLadybug);
+    ladybugRef.value.addEventListener('click', handleClick);
   }
 });
 </script>
@@ -149,7 +156,7 @@ onMounted(() => {
   outline: none;
   outline-offset: 0;
 }
-
+/*
 #ladybug :active {
   background-color: transparent;
   outline: none;
@@ -167,7 +174,7 @@ onMounted(() => {
   outline: none;
   outline-offset: 0;
 }
-
+*/
 .ladybug-text {
   padding-bottom: 50px;
   margin-top: 0;
