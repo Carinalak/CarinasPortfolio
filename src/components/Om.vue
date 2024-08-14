@@ -7,7 +7,7 @@ import LadyBug from './LadyBug.vue';
 <section class="main-container-align-top">
     <article class="text-content">
         <h2>Om</h2>
-        <p>Kolla om detta reloadas under natten!
+        <p>
             Hej! Mitt namn är 
             Carina och jag bor på Ekerö nära 
             Stockholm. Jag studerar 
