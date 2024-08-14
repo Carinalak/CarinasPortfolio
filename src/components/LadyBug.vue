@@ -166,12 +166,12 @@ onMounted(() => {
   padding-bottom: 50px;
   margin-top: 0;
   padding-top: 0;
-}
+}*/
 .ladybug-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-}*/
+}
 .ladybug-container {
   display: flex;
   justify-content: center;
