@@ -151,7 +151,7 @@ onMounted(() => {
 
 
 <style scoped>
-/*
+
 #ladybug {
   cursor: pointer;
   outline: none;
@@ -186,5 +186,5 @@ onMounted(() => {
   opacity: 0;
   transition: opacity 0.9s;
 }
-*/
+
 </style>
