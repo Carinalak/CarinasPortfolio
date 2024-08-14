@@ -8,8 +8,6 @@ import LadyBug from './LadyBug.vue';
     <article class="text-content">
         <h2>Om</h2>
         <p>
-
-            Testar
             Hej! Mitt namn är 
             Carina och jag bor på Ekerö nära 
             Stockholm. Jag studerar 

@@ -52,8 +52,6 @@ const toggleHamburgerMenu = () => {
   </div>
 
 
-
-
 </template>
 <style scoped>
 
