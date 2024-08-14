@@ -160,17 +160,16 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
 }
-
 .ladybug-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%; 
-  height: 100px; /* eller någon lämplig höjd */
+  height: 100px;
 }
-
 .tongue {
   opacity: 0;
   transition: opacity 0.9s;
 }
+
 </style>

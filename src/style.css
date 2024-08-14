@@ -2,7 +2,6 @@
   font-family: "Arial Nova", Arial, Helvetica, sans-serif;
   /*line-height: 1.5;
   font-weight: 400;*/
-  
 }
 :focus {
   outline: none;
@@ -26,7 +25,6 @@ h1 {
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  
 }
 h2 {
   font-family: Roboto, sans-serif;
@@ -34,7 +32,6 @@ h2 {
   font-size: 2rem;
   color: #A1D2E2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
 }
 h3 {
   font-family: Roboto, sans-serif;
@@ -50,7 +47,6 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 30px;
-
 }
 .main-container-align-top {
   display: flex;
@@ -58,13 +54,10 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 30px;
- /* padding-top: 60px;*/
  padding-top: 0;
- /* border: 1px solid red;*/
 }
 .text-content {
   width: 300px;
- /* border: 1px solid red;*/
 }
 a {
   font-weight: 500;
@@ -74,7 +67,6 @@ a {
 a:hover {
   color: #041c39;
 }
-
 .citat {
   font-family: "Caveat", cursive;
   font-size: 3.2rem;
@@ -108,7 +100,6 @@ a:hover {
     padding-top: 100px;
     justify-content: space-evenly;
   }
-
   .text-content {
     width: 25%;
   }

@@ -47,11 +47,9 @@ const emit = defineEmits(['toggleHamburgerMenu'])
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
-
 .hamburger-links.open {
   right: 0; /* Slide in on open */
 }
-
 ul {
   margin: 0;
   padding: 0;
@@ -64,20 +62,16 @@ ul {
   padding-top: 50px;
   padding: 10px;
 }
-
-
 li {
   width: 100%;
   text-align: left;
   padding: 15px;
   border-bottom: 1px solid #4C6A8D;
 }
-
 .hamburger-menu-link {
   cursor: pointer;
   margin-left: 25px;
 }
-
 .close-menu-box {
   display: flex;
   justify-content: space-between;
@@ -87,14 +81,12 @@ li {
   margin-left: 25px;
   font-weight: bold;
 }
-
 .close-menu-icon {
   fill: #F5F5F5;
   width: 30px;
   height: 30px;
   margin-right: 25px;
   cursor: pointer;
-  
 }
 
 @media screen and (min-width: 640px) {

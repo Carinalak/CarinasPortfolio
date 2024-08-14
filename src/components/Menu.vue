@@ -72,6 +72,7 @@ const emit = defineEmits(['toggleHamburgerMenu'])
 .menu-link {
     display: none;
 }
+
 /* ----------------------------- HEADER STYLES - MOBILE VERSION ------------------------------------------- */
 
 .header-content {
@@ -87,17 +88,15 @@ const emit = defineEmits(['toggleHamburgerMenu'])
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 600;
     font-size: 2.3rem;  
-    margin-left: 10px; /* Adjust this value to move the title more to the left */
+    margin-left: 10px; /* Titeln flyttas mer till vänster */
     margin-right: 10px;
     position: relative;
 }
-
 .line {
     flex: 0.3;
     height: 1px;
     background: #f5f5f5;
 }
-
 .header-content::before {
     content: "";
     position: absolute;
@@ -115,9 +114,6 @@ const emit = defineEmits(['toggleHamburgerMenu'])
     height: 1px;
     background: #f5f5f5;
 }
-
-
-
 
 
 @media screen and (min-width: 640px) {

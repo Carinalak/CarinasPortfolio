@@ -139,7 +139,6 @@
 <style scoped>
 .citat-dream1 {
     display: none;
-   
 }
 .citat-dream2 {
     display: block;
@@ -164,7 +163,6 @@
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-    
 .citat-line {
   font-family: "Caveat", cursive;
   font-size: 4rem;
@@ -178,6 +176,7 @@ figcaption {
     width: 350px;
     text-align: center;
 }
+
 @media screen and (min-width: 640px) {
 
     .citat-dream1 {
@@ -189,7 +188,6 @@ figcaption {
         line-height: 3.5rem;
         width: 350px;
     }
-
     .citat-dream2 {
         display: none;
     }

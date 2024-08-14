@@ -1,14 +1,8 @@
 <script setup lang="ts">
 import LadyBug from './LadyBug.vue';
 
-
-
-
-
 </script>
 <template>
-
-
 
 <section class="main-container-align-top">
     <article class="text-content">
@@ -26,14 +20,11 @@ import LadyBug from './LadyBug.vue';
         <p>
             Jag letar just nu efter LIA-plats med början denna höst. Om du är arbetsgivare och vill ha mitt CV, 
             maila mig.
-            
         </p>
-        
     </article>
     <article>
         <img src="../assets/img/CarinaFoto24.png" alt="En bild på en glad tjej i halvlångt brunt hår och glasögon.">
     </article>
-
 </section>
 <section class="main-container-align-top">
     <article class="text-content"> 
@@ -86,15 +77,11 @@ import LadyBug from './LadyBug.vue';
 </article>
 
 </section>
-<section class="main-container-align-top">
+<section class="main-container-responsive-ladybug">
     <article class="text-content">
         <LadyBug class="ladybug-mobil"/>
     </article>
 </section>
-
-
-
-
 
 </template>
 <style scoped>
@@ -114,12 +101,10 @@ img {
     padding-top: 40px;
     padding-bottom: 100px;
 }
-
 .citat1 {
         display: none;
         font-family: "Caveat", cursive;
         font-size: 2.6rem;
-
 }
 .citat2 {
         display: block;
@@ -127,7 +112,7 @@ img {
         font-size: 3.2rem;
         text-align: center;
         padding-top: 30px;
-    }
+}
 .kunskaps-lista {
     margin-left: 0;
     padding-left: 0;
@@ -139,6 +124,15 @@ img {
     display: block;
     padding-top: 40px;
 }
+.main-container-responsive-ladybug {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 0;
+}
+
 /*----------------- TABLET -----------------------*/
 @media screen and (min-width: 640px) {
     
@@ -168,6 +162,9 @@ img {
     }
     .image2 {
         display: none;
+    }
+    .main-container-responsive-ladybug {
+        display: none;  
     }
 }
 
