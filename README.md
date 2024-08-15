@@ -11,6 +11,22 @@ För att köra projektet skriv i Terminalen:
 
 ### Mobila versionen
 
-![Mobile version](assets/mobile1.png)
+![Mobile version](../CarinasPortfolio/src/assets/screenshots/mobil-plan.png)
+
+### Tablet versionen
+
+![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-om-plan.png)
+![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-projekt-plan.png)
+![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-kontakt-plan.png)
+
+### ------------------------------------------------------------------------------
+
+Sidan är under konstruktion fortfarande. Planer finns på att:
+
+- Lägga till ett API och ett formulär.
+- Ordna med tillgängligheten bättre.
+- Se över Reloading när sidan varit öppnad för länge.
+- Göra en Desktop-version.
+- Uppdatera dokumentationen och lägga till en loggbok för hur sidan "växte fram". (Loggbok finns men måste renskrivas och läggas in).
 
 

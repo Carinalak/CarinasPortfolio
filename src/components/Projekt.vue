@@ -94,7 +94,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png"></a></div>
+        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png" alt="Gottfrids Badankor"></a></div>
     </article>
 </section>
 <section class="main-container">
