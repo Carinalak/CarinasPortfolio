@@ -4,44 +4,42 @@ import App from './App.vue'
 
 createApp(App).mount('#app')
 
-// ---------------- Check for updates every midnight ------------------------- //
-// Sidan reloadas varje midnatt och cashen töms, eftersom webbsidan hade problem på GitHub Pages
-// att den inte uppdaterades på mobil och padda när jag uppdaterade en nyare version på Git Hub.
-// Det här scriptet gör att cashen töms en gång per midnatt och sidan reloadas.
+
+// ---------------- Check for updates every three hours ------------------------- //
 
 const checkForUpdates = (): void => {
-    fetch('version.txt', { cache: 'no-cache' })
-      .then(response => response.text())
-      .then(latestVersion => {
-        const currentVersion = localStorage.getItem('siteVersion');
-  
-        if (currentVersion !== latestVersion) {
-          localStorage.setItem('siteVersion', latestVersion);
-          window.location.reload();
-        }
-      })
-      .catch(error => console.error('Error checking for updates:', error));
-  };
-  
-  const scheduleUpdateCheck = (): void => {
-    const now: Date = new Date();
-    const nextMidnight: Date = new Date();
-  
-    // Ställ in nästa midnatt
-    nextMidnight.setHours(24, 0, 0, 0);
-  
-    const timeToNextMidnight: number = nextMidnight.getTime() - now.getTime();
-  
-    setTimeout(() => {
-      checkForUpdates(); // Kontrollera vid midnatt
-      setInterval(checkForUpdates, 24 * 60 * 60 * 1000); // Kontrollera var 24:e timme
-    }, timeToNextMidnight);
-  };
-  
-  scheduleUpdateCheck(); // Schemalägg första kontrollen
-  
+  fetch('version.txt', { cache: 'no-cache' })
+    .then(response => response.text())
+    .then(latestVersion => {
+      const currentVersion = localStorage.getItem('siteVersion');
 
-  // ---------------- End updatecheck midnight ------------------------- //
+      if (currentVersion !== latestVersion) {
+        localStorage.setItem('siteVersion', latestVersion);
+        window.location.reload();
+      }
+    })
+    .catch(error => console.error('Error checking for updates:', error));
+};
+
+const scheduleUpdateCheck = (): void => {
+  const now: Date = new Date();
+  const nextCheck: Date = new Date(now.getTime());
+
+  // Ställ in nästa kontrolltid till tre timmar framåt
+  nextCheck.setHours(now.getHours() + 3, 0, 0, 0);
+
+  const timeToNextCheck: number = nextCheck.getTime() - now.getTime();
+
+  setTimeout(() => {
+    checkForUpdates(); // Kontrollera vid nästa tre-timmars intervall
+    setInterval(checkForUpdates, 3 * 60 * 60 * 1000); // Kontrollera var tredje timme
+  }, timeToNextCheck);
+};
+
+scheduleUpdateCheck(); // Schemalägg första kontrollen
+
+// ---------------- End update check ------------------------- //
+
 
   // ---------------- Check for updates every hour ------------------------- //
 /*
@@ -75,8 +73,7 @@ const checkForUpdates = (): void => {
   };
   
   scheduleUpdateCheck(); // Schemalägg första kontrollen
-  */
-
-
+  
+*/
    // ---------------- End updatecheck ------------------------- //
 
