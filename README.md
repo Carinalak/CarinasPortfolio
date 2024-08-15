@@ -11,13 +11,13 @@ För att köra projektet skriv i Terminalen:
 
 ### Mobila versionen
 
-![Mobile version](../CarinasPortfolio/src/assets/screenshots/mobil-plan.png)
+![Mobile version](./src/assets/screenshots/mobil-plan.png)
 
 ### Tablet versionen
 
-![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-om-plan.png)
-![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-projekt-plan.png)
-![Tablet version](../CarinasPortfolio/src/assets/screenshots/tablet-kontakt-plan.png)
+![Tablet version](./src/assets/screenshots/tablet-om-plan.png)
+![Tablet version](./src/assets/screenshots/tablet-projekt-plan.png)
+![Tablet version](./src/assets/screenshots/tablet-kontakt-plan.png)
 
 ### ------------------------------------------------------------------------------
 
