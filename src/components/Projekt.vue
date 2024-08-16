@@ -38,7 +38,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png"/></a></div>
+        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png" alt="Tic Tac Toe - spel i ljuslila och vitt med ringar och kryss i tre gånger tre rutor."/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -51,7 +51,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/breweryclub.png"/></a></div>
+        <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/breweryclub.png" alt="The Brewery club mörkgrön bakgrund med en svart silhuett av en katt som sitter på en skylt. Tre svarta kaffebönor under varann högst upp i höger hörn."/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -65,7 +65,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Vue-TodoList/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/todolist.png"></a></div>
+        <div><a href="https://carinalak.github.io/Vue-TodoList/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/todolist.png" alt="Att göra -lista i ljusrosa och ljuslila färger."></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -78,7 +78,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/Medieinstitutet-grafiska-verktyg-butterfly/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/butterfly.png"/></a></div>
+        <div><a href="https://carinalak.github.io/Medieinstitutet-grafiska-verktyg-butterfly/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/butterfly.png" alt="Butterfly animation. Ärtgrön bakgrund med en glad fjäril i rosa i en blå cirkel. En text under den, det står hello friends."/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -94,7 +94,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png" alt="Gottfrids Badankor"></a></div>
+        <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png" alt="Gottfrids Badankor. Vit bakgrund med en plastanka med badring runt halsen och en plastanka med glasögon och hårknut."></a></div>
     </article>
 </section>
 <section class="main-container">
