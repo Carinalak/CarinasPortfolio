@@ -50,6 +50,9 @@ import LadyBug from './LadyBug.vue';
                 Vue
             </li>
             <li>
+                React
+            </li>
+            <li>
                 Adobe Photoshop
             </li>
             <li>
