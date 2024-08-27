@@ -68,7 +68,7 @@ import LadyBug from './LadyBug.vue';
                 Ux-design
             </li>
             <li>
-                MAMP, MySql
+                MongoDB, MySql
             </li>
             <li>
                 Testning (e2e och Cypress)
