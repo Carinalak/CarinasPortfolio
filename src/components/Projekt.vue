@@ -34,7 +34,7 @@
             ett api, men djuren ska vi lagra i localStorage, och de är mätta i tre timmar efter att man klickat på dem, 
             sen ska de bli hungriga. Färgerna indikerar hungern. Just nu är projektet på skolans gitHub-konto och det är 
             inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta på själva koden 
-            på github.
+            på GitHub.
         </div>
     </article>
     <article>
