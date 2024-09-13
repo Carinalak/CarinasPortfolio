@@ -27,6 +27,22 @@
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>The Zoo</h3></div>
+        <div>
+            Den här sidan är gjord i React med TypeScript och VITE. Det var en skoluppgift som vi fick augusti 2024 när vi 
+            lärde oss React. Den går ut på att mata de djur som är hungriga genom att klicka på dem. Vi fick en adress till 
+            ett api, men djuren ska vi lagra i localStorage, och de är mätta i tre timmar efter att man klickat på dem, 
+            sen ska de bli hungriga. Färgerna indikerar hungern. Just nu är projektet på skolans gitHub-konto och det är 
+            inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta på själva koden 
+            på github.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://github.com/Medieinstitutet/the-zoo-Carinalak" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/zoo.png" alt="The Zoo - mata djuren när de är hungriga!"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>Tic Tac Toe</h3></div>
         <div>
             Det här är ett tre i rad - spel 
