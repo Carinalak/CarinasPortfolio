@@ -1,14 +1,7 @@
 <script setup lang="ts">
 
-
-
-
-
-
-
 </script>
 <template>
-
 
 <section class="main-container">
     <article class="text-content">
@@ -32,7 +25,7 @@
             Den här sidan är gjord i React med TypeScript och VITE. Det var en skoluppgift som vi fick augusti 2024 när vi 
             lärde oss React. Den går ut på att mata de djur som är hungriga genom att klicka på dem. Vi fick en adress till 
             ett api, men djuren ska vi lagra i localStorage, och de är mätta i tre timmar efter att man klickat på dem, 
-            sen ska de bli hungriga. Färgerna indikerar hungern. Just nu är projektet på skolans gitHub-konto och det är 
+            sen ska de bli hungriga. Färgerna indikerar hungern. Just nu är projektet på skolans GitHub-konto och det är 
             inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta på själva koden 
             på GitHub.
         </div>
@@ -59,9 +52,23 @@
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>Ice Cream</h3></div>
+        <div>
+            Ett skolprojekt. Det här är en layout-design jag gjorde tillsammans med några andra i min klass. Vi jobbade i Figma och Photoshop. 
+            När designen var klar fick en annan grupp förverkliga vår design med en hemsida. Vi skulle använda Svg-animationer i 
+            planeringen. Jag gjorde en rolig glassanimation, som jag först deisgnade i Figma och sen lade till rörelse med Gsap. 
+            I bakgrunden finns cirklar som rör sig sakta.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://github.com/Carinalak/IceCream-copiedFromMyOwnProfile" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/IceCream.png" alt="Goda glassar i härliga pastellfärger"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>The Brewery Club</h3></div>
         <div>
-           Det här projektet gjorde vi i grupp. Vår grupp skulle göra en webbsida av en layout-design vi fick av en annan 
+           Ett skolprojekt. Det här projektet gjorde vi i grupp. Vår grupp skulle göra en webbsida av en layout-design vi fick av en annan 
            grupp i klassen. Layouten och planen för vilka effekter som skulle ingå gjordes i Figma och överlämnades till oss. 
            Vi fick förverkliga den i en webbsida.
         </div>
