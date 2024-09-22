@@ -24,7 +24,7 @@ import LadyBug from './LadyBug.vue';
         </p>
     </article>
     <article>
-        <img src="../assets/img/CarinaFoto24.png" alt="En bild på en glad tjej i halvlångt brunt hår och glasögon.">
+        <img src="../assets/img/carinapic-24b.png" alt="Carina Lakosil">
     </article>
 </section>
 <section class="main-container-align-top">
@@ -94,9 +94,16 @@ h2 {
     margin-bottom: 0;
 }
 img {
+    width: 308px;
+    height: 311px;
+}
+/*
+img {
     width: 200px;
     height: 167.6px;
 }
+
+*/
 .ladybug-tablet {
     display: none;
 }
@@ -148,10 +155,14 @@ img {
     .ladybug-mobil {
     visibility: hidden;
     }
+
+   
+/*
     img {
         width: 333.33px;
         height: 279.33px;
     }
+*/
     .citat1 {
         display: block;
         font-family: "Caveat", cursive;

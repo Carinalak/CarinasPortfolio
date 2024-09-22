@@ -19,7 +19,7 @@
     </article>
 
     <article>
-        <img src="../assets/img/CarinaFoto24.png" alt="En bild på en glad tjej i halvlångt brunt hår och glasögon.">
+        <img src="../assets/img/carinapic-24b.png" alt="Carina Lakosil">
     </article>
 
 </section>
@@ -38,10 +38,15 @@ h2 {
     margin-bottom: 0;
 }
 img {
+    width: 308px;
+    height: 311px;
+    }
+    /*
+img {
     width: 200px;
     height: 167.6px;
 }
-
+*/
 .citat1 {
         display: block;
         font-family: "Caveat", cursive;
@@ -57,11 +62,6 @@ img {
     }
 /*----------------- TABLET -----------------------*/
 @media screen and (min-width: 640px) {
-    img {
-        width: 333.33px;
-        height: 279.33px;
-    }
-
     
     .citat1 {
         display: none;
