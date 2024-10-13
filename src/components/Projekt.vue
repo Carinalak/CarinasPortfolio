@@ -20,18 +20,31 @@
 </section>
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>Jobbhjälparna</h3></div>
+        <div>
+            Den här sidan är gjord i React med TypeScript och VITE. Det var en gruppuppgift som vi fick göra i oktober 2024. 
+            Vi fick använda arbetsförmedlingens API och deras designsystem, och göra en egen sida av det. Vi var fyra personer 
+            i gruppen. Projektet är inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta 
+            på själva koden på GitHub.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://github.com/Medieinstitutet/case-af-team-7/branches" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/jobbhjalp_search.png" alt="Jobbhjälparna - sök jobb hos oss!"/></a></div>
+    </article>
+</section>
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>The Zoo</h3></div>
         <div>
             Den här sidan är gjord i React med TypeScript och VITE. Det var en skoluppgift som vi fick augusti 2024 när vi 
             lärde oss React. Den går ut på att mata de djur som är hungriga genom att klicka på dem. Vi fick en adress till 
             ett api, men djuren ska vi lagra i localStorage, och de är mätta i tre timmar efter att man klickat på dem, 
-            sen ska de bli hungriga. Färgerna indikerar hungern. Just nu är projektet på skolans GitHub-konto och det är 
-            inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta på själva koden 
+            sen ska de bli hungriga. Färgerna indikerar hungern. Projektet är inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta på själva koden 
             på GitHub.
         </div>
     </article>
     <article>
-        <div><a href="https://github.com/Medieinstitutet/the-zoo-Carinalak" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/zoo.png" alt="The Zoo - mata djuren när de är hungriga!"/></a></div>
+        <div><a href="https://github.com/Carinalak/the-Zoo" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/zoo.png" alt="The Zoo - mata djuren när de är hungriga!"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -47,7 +60,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://medieinstitutet.github.io/vue-tictactoe-Carinalak/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png" alt="Tic Tac Toe - spel i ljuslila och vitt med ringar och kryss i tre gånger tre rutor."/></a></div>
+        <div><a href="https://carinalak.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png" alt="Tic Tac Toe - spel i ljuslila och vitt med ringar och kryss i tre gånger tre rutor."/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">

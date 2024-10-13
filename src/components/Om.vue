@@ -16,11 +16,7 @@ import LadyBug from './LadyBug.vue';
             och är på mitt andra år
             nu. På den här sidan delar jag med mig av några 
             projekt jag gjort, både under studietiden, men även utanför.
-            Höstterminen 2024 börjar vi med att lära oss React.
-        </p>
-        <p>
-            Jag letar just nu efter LIA-plats med början denna höst. Om du är arbetsgivare och vill ha mitt CV, 
-            maila mig.
+            Under höstterminen lär vi oss React, och från oktober till december är jag ute i arbetslivet på praktik (LIA).
         </p>
     </article>
     <article>
