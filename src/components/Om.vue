@@ -20,7 +20,7 @@ import LadyBug from './LadyBug.vue';
         </p>
     </article>
     <article>
-        <img src="../assets/img/carinapic-24b.png" alt="Carina Lakosil">
+        <img src="../assets/img/carina24c.png" alt="Carina Lakosil">
     </article>
 </section>
 <section class="main-container-align-top">
