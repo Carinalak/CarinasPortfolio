@@ -29,7 +29,6 @@ Formuläret skickas med hjälp av tjänsten EmailJs. Jag ska lägga till en vali
 
 - Ordna med tillgängligheten bättre.
 - Se över Reloading när sidan varit öppnad för länge.
-- Göra en Desktop-version.
 - Eventuellt uppdatera dokumentationen och lägga till en loggbok för hur sidan "växte fram". (Loggbok finns men måste renskrivas och läggas in).
 
 
