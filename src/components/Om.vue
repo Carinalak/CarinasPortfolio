@@ -12,12 +12,16 @@ import LadyBug from './LadyBug.vue';
             Hej! Mitt namn är 
             Carina och jag bor på Ekerö nära 
             Stockholm. Jag studerar 
-            till Front End Utvecklare på MedieInstitutet
+            till Front End Developer på Medieinstitutet
             och är på mitt andra år
             nu. På den här sidan delar jag med mig av några 
-            projekt jag gjort, både under studietiden, men även utanför.
-            Under höstterminen lär vi oss React, och från oktober till december är jag ute i arbetslivet på praktik (LIA).
-        </p>
+            projekt jag gjort, både under studietiden, men även utanför.</p>
+            <p>Jag avslutade min praktikperiod på tio veckor strax innan jul och söker nu praktikplats igen till nästa period som är 3 februari till 
+                23 maj 2025. </p>
+                <p>Nu i januari jobbar jag på ett 
+                examensarbete till skolan.
+            </p>
+        
     </article>
     <article>
         <img src="../assets/img/carina24c.png" alt="Carina Lakosil">
