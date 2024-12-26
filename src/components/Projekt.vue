@@ -18,6 +18,35 @@
             work hard!</div>
     </article>
 </section>
+
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>The Nightingale Project</h3></div>
+        <div>
+            Här gjorde jag min praktik. Jag byggde upp denna webbplats tillsammans med Anna. Vi fick en design att gå efter 
+            och gjorde den i React/VITE och TypeScript. Den gjordes november-december 2024.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://nightingale.uni-mainz.de/" target="_blank" rel="noopener noreferrer">
+            <img class="image-style" src=".././assets/img/Nightingale.png" alt="The Nightingale Project"/></a>
+        </div>
+    </article>
+</section> 
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>Lps-Tuva</h3></div>
+        <div>
+            Denna sida är gjord i React/VITE med TypeScript. Jag gjorde den till min dotter som har en YouTube kanal med samma namn. 
+            Åldersgruppen är barn mellan 6 till 13 år ungefär. Den gjordes november-december 2024.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://lpstuva.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <img class="image-style" src=".././assets/img/LpsTuva.jpeg" alt="Lps-Tuva"/></a>
+        </div>
+    </article>
+</section>
 <section class="main-container-align-top">
     <article class="text-content">
         <div><h3>Jobbhjälparna</h3></div>
