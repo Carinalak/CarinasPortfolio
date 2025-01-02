@@ -116,7 +116,7 @@ form {
   border-radius: 10px;
   border-color: #4C6A8D;
   margin-bottom: 10px;
-  width: 250px;
+  width: 300px;
 }
 
 .textarea {
@@ -124,6 +124,7 @@ form {
   border-radius: 10px;
   margin-bottom: 10px;
   border-color: #4C6A8D;
+  width: 300px;
 }
 
 .input,
@@ -172,6 +173,11 @@ form {
 .button-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 0.5rem;
+
   }
 
 /*----------------- TABLET -----------------------*/
