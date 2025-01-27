@@ -95,7 +95,7 @@ onMounted(() => {
 <template>
 
 <div class="ladybug-box">
-<div class="ladybug-text">Nyckelpigan gillar inte att bli klickad på. Låt den vara ifred.</div>
+
 <div class="ladybug-container">
 <svg ref="ladybugRef" id="ladybug" viewBox="88.907 129.718 100.523 86.33" width="52.164" height="44.648" xmlns="http://www.w3.org/2000/svg">
   <line id="LegLeft1" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-linecap: round;" x1="158.158" y1="148.817" x2="167.178" y2="138.594"></line>
