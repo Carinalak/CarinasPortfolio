@@ -21,6 +21,26 @@
 
 <section class="main-container-align-top">
     <article class="text-content">
+        <div><h3>Kaninspelet</h3></div>
+        <div>
+            Det här är mitt examensarbete.
+            Den är gjord med React/Typescript och VITE. 
+            Det finns inloggning med krypterat lösenord, token och cookies. 
+            Användare och andra uppgifter sparas i databas.
+            Spelet går ut på att lösa ett matteproblem och klicka på ett kort med rätt nummer. Man får ett 
+            poäng för varje rätt svar, och två poäng extra om man fångar en guldkanin. Man har två minuter på 
+            sig för varje spelomgång. Det finns en topplista där alla spelare syns.
+
+        </div>
+    </article>
+    <article>
+        <div><a href="https://kaninspelet.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <img class="image-style" src=".././assets/img/kaninspelet.png" alt="Kaninspelet"/></a>
+        </div>
+    </article>
+</section> 
+<section class="main-container-align-top">
+    <article class="text-content">
         <div><h3>The Nightingale Project</h3></div>
         <div>
             Här gjorde jag min praktik. Jag byggde upp denna webbplats tillsammans med Anna. Vi fick en design att gå efter 
