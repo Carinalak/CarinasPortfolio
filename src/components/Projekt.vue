@@ -67,7 +67,7 @@
     </article>
     <article>
         <div><a href="https://lpstuva.onrender.com/" target="_blank" rel="noopener noreferrer">
-            <img class="image-style" src=".././assets/img/LpsTuva.jpeg" alt="Lps-Tuva"/></a>
+            <img class="image-style" src=".././assets/img/LpsTuva.png" alt="Lps-Tuva"/></a>
         </div>
     </article>
 </section>
@@ -82,7 +82,7 @@
         </div>
     </article>
     <article>
-        <div><a href="https://github.com/Medieinstitutet/case-af-team-7/branches" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/jobbhjalp_search.png" alt="Jobbhjälparna - sök jobb hos oss!"/></a></div>
+        <div><a href="https://github.com/Medieinstitutet/case-af-team-7/branches" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/jobbhjalp_home.png" alt="Jobbhjälparna - sök jobb hos oss!"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">
@@ -237,18 +237,16 @@
 
 
 
-
-
 </template>
 <style scoped>
 
 .video-wrapper {
-  width: 100%;
+  width: 300px;
   max-width: 800px;
   margin: auto;
 }
 .video-player {
-  width: 100%;
+  width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
