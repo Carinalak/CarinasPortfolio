@@ -1,5 +1,9 @@
 <script setup lang="ts">
 
+//const videoSrc = '/pepparkakor_25.mp4'
+//const videoSrc = new URL('@/assets/pepparkakor_25.mp4', import.meta.url).href
+//const posterImage = new URL('@/assets/5.jpeg', import.meta.url).href
+
 </script>
 <template>
 
@@ -216,12 +220,40 @@
 
 
 
+<section class="main-container-align-top">
+    <article class="text-content">
+            <h2>Ett roligt klipp...</h2>
+            <div>Detta roliga klipp är gjort i Adobe Premiere Elements precis som mina andra videos. Jag har kombinerat det med bilder som jag redigerat i Adobe Photoshop.</div>
+        </article>
+        <article class="text-content"> 
+            <div class="video-wrapper">
+                <video src="/pepparkakor_25.mp4" controls poster="../assets/5.jpg" class="video-player" />
+                </div>
+        </article>
+
+</section>
+
+
+
 
 
 
 
 </template>
 <style scoped>
+
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 .citat-dream1 {
     display: none;
 }

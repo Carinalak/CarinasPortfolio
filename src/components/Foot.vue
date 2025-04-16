@@ -12,7 +12,7 @@
 <footer>
     
     <div class="line-footer-top"></div>
-    <div class="copyright-text">&copy; Carina Lakosil 2024</div>
+    <div class="copyright-text">&copy; Carina Lakosil 2024 - 2025</div>
     <div class="line-footer-bottom"></div>
     <div class="footer-icons-container">
         <div class="footer-icons">
