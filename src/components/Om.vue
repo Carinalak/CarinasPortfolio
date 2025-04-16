@@ -16,11 +16,8 @@ import LadyBug from './LadyBug.vue';
             och är på mitt andra år
             nu. På den här sidan delar jag med mig av några 
             projekt jag gjort, både under studietiden, men även utanför.</p>
-            <p>Jag avslutade min praktikperiod på tio veckor strax innan jul och söker nu praktikplats igen till nästa period som är 3 februari till 
-                23 maj 2025. </p>
-                <p>Nu i januari jobbar jag på ett 
-                examensarbete till skolan.
-            </p>
+            <p>Jag är snart klar med min praktik på Universitetet i Mainz och söker nu jobb som Front end utvecklare, 
+                UI/UX designer, eller liknande. </p>
         
     </article>
     <article>
@@ -35,22 +32,31 @@ import LadyBug from './LadyBug.vue';
         <h2>Mina kunskaper</h2>
         <div><ul class="kunskaps-lista">
             <li>
+                React
+            </li>
+            <li>
+                Next.js
+            </li>
+            <li>
+                Vue
+            </li>
+            <li>
                 HTML
             </li>
             <li>
                 CSS, SASS
             </li>
             <li>
+                Styled Components
+            </li>
+            <li>
+                TailwindCSS
+            </li>
+            <li>
                 JavaScript
             </li>
             <li>
                 Typescript
-            </li>
-            <li>
-                Vue
-            </li>
-            <li>
-                React
             </li>
             <li>
                 Adobe Photoshop
@@ -75,6 +81,9 @@ import LadyBug from './LadyBug.vue';
             </li>
             <li>
                 Testning (e2e och Cypress)
+            </li>
+            <li>
+                Git
             </li>
         </ul>
     </div>
