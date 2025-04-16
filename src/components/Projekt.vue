@@ -227,7 +227,7 @@
         </article>
         <article class="text-content"> 
             <div class="video-wrapper">
-                <video src="/pepparkakor_25.mp4" controls poster="../assets/5.jpg" class="video-player" />
+                <video src="/pepparkakor_25.mp4" controls poster="/5.jpg" class="video-player" />
                 </div>
         </article>
 
