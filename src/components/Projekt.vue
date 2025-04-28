@@ -277,6 +277,11 @@
     width: 350px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .citat-line {
   font-family: "Caveat", cursive;

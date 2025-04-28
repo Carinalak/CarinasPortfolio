@@ -10,8 +10,7 @@ import LadyBug from './LadyBug.vue';
         <p>
 
             Hej! Mitt namn är 
-            Carina och jag bor på Ekerö nära 
-            Stockholm. Jag studerar 
+            Carina och jag bor på Ekerö. Jag studerar 
             till Front End Developer på Medieinstitutet
             och är på mitt andra år
             nu. På den här sidan delar jag med mig av några 
