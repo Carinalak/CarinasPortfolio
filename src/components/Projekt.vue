@@ -77,12 +77,11 @@
         <div>
             Den här sidan är gjord i React med TypeScript och VITE. Det var en gruppuppgift som vi fick göra i oktober 2024. 
             Vi fick använda arbetsförmedlingens API och deras designsystem, och göra en egen sida av det. Vi var fyra personer 
-            i gruppen. Projektet är inte deployat, vilket innebär att det inte går att se i en browser. Det går utmärkt att titta 
-            på själva koden på GitHub.
+            i gruppen.
         </div>
     </article>
     <article>
-        <div><a href="https://github.com/Medieinstitutet/case-af-team-7/branches" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/jobbhjalp_home.png" alt="Jobbhjälparna - sök jobb hos oss!"/></a></div>
+        <div><a href="https://carinalak.github.io/Jobhelpers-schoolproject/#/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/jobbhjalp_home.png" alt="Jobbhjälparna - sök jobb hos oss!"/></a></div>
     </article>
 </section>
 <section class="main-container-align-top">

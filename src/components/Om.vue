@@ -10,9 +10,10 @@ import LadyBug from './LadyBug.vue';
         <p>
 
             Hej! Mitt namn är 
-            Carina och jag bor på Ekerö. Jag har precis tagit Examen efter två år och är nu en stolt Front End Developer! 
-            På den här sidan delar jag med mig av några 
-            projekt jag gjort, både under studietiden, men även utanför.</p>
+            Carina och jag bor på Ekerö. Jag har precis tagit Examen efter två års studier på Medieinstitutet 
+            och är nu en färdigutbildad Front End Developer! 
+            
+            </p>
             <p> </p>
         
     </article>
