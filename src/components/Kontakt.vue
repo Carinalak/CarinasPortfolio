@@ -14,15 +14,49 @@ const onSubmit = async (event: Event) => {
   event.preventDefault();
   loading.value = true;
 
+  const formData = new FormData(formRef.value!);
+  const data = Object.fromEntries(formData);
+
+  // Regex för validering
+  const namePattern = /^[A-Za-zÅÄÖåäö\s\-]+$/;
+  const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+
+  // Validering
+  const name = (data.name as string)?.trim();
+  const email = (data.email as string)?.trim();
+  const message = (data.message as string)?.trim();
+
+  if (!name || !namePattern.test(name)) {
+    alert("Ogiltigt namn. Endast bokstäver, bindestreck och mellanslag tillåtna.");
+    loading.value = false;
+    return;
+  }
+
+  if (!email || !emailPattern.test(email)) {
+    alert("Ogiltig e-postadress.");
+    loading.value = false;
+    return;
+  }
+
+  if (!message || message.length < 5) {
+    alert("Meddelandet måste vara minst 5 tecken långt.");
+    loading.value = false;
+    return;
+  }
+
+  // Sanitisering – enkel XSS-förebyggande
+  const sanitizedData = {
+    name: name.replace(/</g, "&lt;").replace(/>/g, "&gt;"),
+    email: email, // e-post behöver sällan saneras
+    message: message.replace(/</g, "&lt;").replace(/>/g, "&gt;")
+  };
+
   try {
-    const formData = new FormData(formRef.value!);
-    const data = Object.fromEntries(formData);
-    
     const response = await emailjs.send(
-      'service_qkc144e', // SERVICE_ID
-      'template_xu9kb36', // TEMPLATE_ID
-      data,
-      'H74Jjt9ZAOQP4cSfK' // PUBLIC_KEY
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      sanitizedData,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     );
 
     console.log('E-post skickat:', response);
@@ -35,6 +69,7 @@ const onSubmit = async (event: Event) => {
     alert('Ett fel inträffade, försök igen senare.');
   }
 };
+
 
 </script>
 
@@ -55,17 +90,17 @@ const onSubmit = async (event: Event) => {
 
     <article>
         <form ref="formRef" @submit="onSubmit">
-  <input class="input" placeholder="Namn" type="text" name="name" required />
-  <input class="input" placeholder="Epost" type="email" name="email" required />
-  <textarea class="textarea" placeholder="Meddelande" name="message" rows="10" required></textarea>
-  <div class="button-wrapper">
-    <button class="formBtn" type="button" @click="clearForm">Rensa</button>
-    <button class="formBtn" type="submit" :disabled="loading">Skicka</button>
-   <!-- <div v-if="loading" class="spinner">Skickar...</div> -->
+          <input class="input" placeholder="Namn" type="text" name="name" required pattern="^[A-Za-zÅÄÖåäö\s\-]+$" title="Endast bokstäver och mellanslag är tillåtna"/>
+          <input class="input" placeholder="Epost" type="email" name="email" required />
+          <textarea class="textarea" placeholder="Meddelande" name="message" rows="10" required></textarea>
+          <div class="button-wrapper">
+            <button class="formBtn" type="button" @click="clearForm">Rensa</button>
+            <button class="formBtn" type="submit" :disabled="loading">Skicka</button>
+          <!-- <div v-if="loading" class="spinner">Skickar...</div> -->
 
 
-  </div>
-</form>
+          </div>
+        </form>
        <!--  <img src="../assets/img/carina24c.png" alt="Carina Lakosil"> -->
     </article>
 
