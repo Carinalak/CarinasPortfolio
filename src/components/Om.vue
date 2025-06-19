@@ -11,7 +11,7 @@ import LadyBug from './LadyBug.vue';
 
             Hej! Mitt namn är 
             Carina och jag bor på Ekerö. Jag har precis tagit Examen efter två års studier på Medieinstitutet 
-            och är nu en färdigutbildad Front End Developer! 
+            och är nu en färdigutbildad Front End Developer! Jag söker jobb där jag kan bidra med mina kunskaper och min kreativitet.
             
             </p>
             <p> </p>
