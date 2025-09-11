@@ -9,9 +9,9 @@ import LadyBug from './LadyBug.vue';
         <h2>Om</h2>
         <p>
 
-            Hej! Mitt namn är 
-            Carina och jag bor på Ekerö. Jag har precis tagit Examen efter två års studier på Medieinstitutet 
-            och är nu en färdigutbildad Front End Developer! Jag söker jobb där jag kan bidra med mina kunskaper och min kreativitet.
+            Hej! Mitt namn är Carina och jag bor på Ekerö. Jag har precis tagit Examen 
+            på Medieinstitutet, en tvåårig yrkeshögskoleutbildning som Front End Developer. 
+            Jag söker jobb där jag kan bidra med mina kunskaper och min kreativitet.
             
             </p>
             <p> </p>
@@ -85,7 +85,37 @@ import LadyBug from './LadyBug.vue';
         </ul>
     </div>
 </article>
-
+<!-- Testar ny design nedan -->
+ <!--
+    <article class="text-content">
+        <h2>Mina kunskaper</h2>
+        <div>
+            <ul>
+              <SkillTitle>Språk</SkillTitle>
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>CSS/SASS</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+              <SkillTitle>Styling</SkillTitle>
+              <li>Styled Components</li>
+              <li>TailwindCSS</li>
+            </ul>
+        </div>
+        <div>
+             <ul>
+              <SkillTitle>Ramverk</SkillTitle>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Vue</li>
+            </ul>
+        </div>
+</article>
+-->
+<!-- Slut på ny design ny design nedan -->
 </section>
 <section class="main-container-responsive-ladybug">
     <article class="text-content">
