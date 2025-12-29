@@ -23,6 +23,19 @@
     </article>
 </section>
 
+<section class="main-container-align-top">
+    <article class="text-content">
+        <div><h3>Carina Stars</h3></div>
+        <div>
+            En sida om artisten Carina Stars. Gjord i React/Vite. Man kan välja om sidan ska visas på svenska eller engelska.
+        </div>
+    </article>
+    <article>
+        <div><a href="https://carinastars.com/" target="_blank" rel="noopener noreferrer">
+            <img class="image-style" src=".././assets/img/carinastars_web.png" alt="Carina Stars"/></a>
+        </div>
+    </article>
+</section>
 
 <section class="main-container-align-top">
     <article class="text-content">
@@ -101,6 +114,7 @@
         <div><a href="https://carinalak.github.io/Tic-Tac-Toe/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/tictactoe.png" alt="Tic Tac Toe - spel i ljuslila och vitt med ringar och kryss i tre gånger tre rutor."/></a></div>
     </article>
 </section>
+<!--
 <section class="main-container-align-top">
     <article class="text-content">
         <div><h3>Ice Cream</h3></div>
@@ -128,6 +142,7 @@
         <div><a href="https://carinalak.github.io/Gruppuppgift-Gabriella-Brewery/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/breweryclub.png" alt="The Brewery club mörkgrön bakgrund med en svart silhuett av en katt som sitter på en skylt. Tre svarta kaffebönor under varann högst upp i höger hörn."/></a></div>
     </article>
 </section>
+
 <section class="main-container-align-top">
     <article class="text-content">
         <div><h3>Att göra lista</h3></div>
@@ -170,7 +185,7 @@
     <article>
         <div><a href="https://carinalak.github.io/gottfrids-badankor/" target="_blank" rel="noopener noreferrer"><img class="image-style" src=".././assets/img/gottfrids.png" alt="Gottfrids Badankor. Vit bakgrund med en plastanka med badring runt halsen och en plastanka med glasögon och hårknut."></a></div>
     </article>
-</section>
+</section>-->
 <section class="main-container">
     <article> 
         <div class="citat-dream2">Dream big, <br>
